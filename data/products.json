@@ -1,0 +1,205 @@
+[
+  {
+    "id": "electric_cooker",
+    "name": "Electric Cooker",
+    "domain": "Electrical & Electronic Products",
+    "category": "Heating Appliances",
+    "description": "Electric cooking appliances including induction, slow cookers, pressure cookers, and heating pans for domestic and commercial food preparation.",
+    "icon": "cooker",
+    "common_ratings": ["750W", "1000W", "1500W", "2000W", "230V AC, 50Hz"],
+    "keywords": ["cooker", "rice cooker", "induction cooker", "electric pan", "cooking appliance", "hot plate", "steam cooker", "कुकर", "కుక్కర్", "குக்கர்"],
+    "sample_queries": [
+      "I need a 2000W electric cooker for domestic use with automatic temperature control",
+      "घरेलू उपयोग के लिए 2000W इलेक्ट्रिक कुकर",
+      "గృహ వినియోగం కోసం 2000W ఎలక్ట్రిక్ కుక్కర్"
+    ]
+  },
+  {
+    "id": "electric_iron",
+    "name": "Electric Iron",
+    "domain": "Electrical & Electronic Products",
+    "category": "Heating Appliances",
+    "description": "Dry and steam electric irons intended for household pressing and fabric smoothing with adjustable thermostat controls.",
+    "icon": "iron",
+    "common_ratings": ["1000W", "1250W", "1600W", "2200W", "230V AC, 50Hz"],
+    "keywords": ["iron", "steam iron", "dry iron", "clothes iron", "pressing iron", "इस्त्री", "ఇస్త్రీ", "இஸ்திரி"],
+    "sample_queries": [
+      "Automatic electric steam iron with non-stick soleplate and thermal cut-off",
+      "तापमान नियंत्रण के साथ घरेलू इलेक्ट्रिक स्टीम आयरन",
+      "ఆటోమేటిక్ ఉష్ణోగ్రత నియంత్రణతో ఎలక్ట్రిక్ ఐరన్"
+    ]
+  },
+  {
+    "id": "electric_fan",
+    "name": "Electric Fan",
+    "domain": "Electrical & Electronic Products",
+    "category": "Motor-Operated Appliances",
+    "description": "Ceiling fans, table fans, pedestal fans, and wall-mounted air circulators with speed regulators for domestic and commercial ventilation.",
+    "icon": "fan",
+    "common_ratings": ["50W", "75W", "1200mm sweep", "1400mm sweep", "230V AC, 50Hz"],
+    "keywords": ["fan", "ceiling fan", "table fan", "pedestal fan", "exhaust fan", "air circulator", "पंखा", "ఫ్యాన్", "மின்விசிறி"],
+    "sample_queries": [
+      "1200mm sweep energy efficient BLDC ceiling fan with electronic regulator",
+      "बीएलडीसी सीलिंग पंखा 1200 मिमी स्वीप",
+      "1200 మిమీ సీలింగ్ ఫ్యాన్ రెగ్యులేటర్‌తో"
+    ]
+  },
+  {
+    "id": "refrigerator",
+    "name": "Refrigerator",
+    "domain": "Electrical & Electronic Products",
+    "category": "Cooling Appliances",
+    "description": "Household refrigerating appliances, frost-free and direct cool refrigerators, and frozen food storage cabinets.",
+    "icon": "refrigerator",
+    "common_ratings": ["190L", "260L", "350L", "Star Rated Energy Consumption", "230V AC, 50Hz"],
+    "keywords": ["refrigerator", "fridge", "freezer", "frost free", "direct cool", "chiller", "रेफ्रिजरेटर", "ఫ్రిజ్", "குளிரூட்டி"],
+    "sample_queries": [
+      "Double door frost-free domestic refrigerator with eco-friendly refrigerant R600a",
+      "घरेलू उपयोग के लिए फ्रॉस्ट फ्री रेफ्रिजरेटर",
+      "గృహ అవసరాల కోసం డబుల్ డోర్ రిఫ్రిజిరేటర్"
+    ]
+  },
+  {
+    "id": "washing_machine",
+    "name": "Washing Machine",
+    "domain": "Electrical & Electronic Products",
+    "category": "Motor-Operated Appliances",
+    "description": "Domestic electric clothes washing machines, semi-automatic and fully automatic top and front-loading units.",
+    "icon": "washing_machine",
+    "common_ratings": ["6.5 kg", "7.5 kg", "8.5 kg", "Spin speed 800-1400 RPM", "230V AC, 50Hz"],
+    "keywords": ["washing machine", "washer", "laundry appliance", "clothes washer", "വാഷിംഗ് മെഷീൻ", "వాషింగ్ మెషిన్", "வாஷிங் மெஷின்"],
+    "sample_queries": [
+      "Fully automatic front load washing machine with spin extraction and child lock",
+      "पूरी तरह से स्वचालित वॉशिंग मशीन कपड़े धोने के लिए",
+      "పూర్తిగా ఆటోమేటిక్ వాషింగ్ మెషీన్ బట్టలు ఉతకడానికి"
+    ]
+  },
+  {
+    "id": "led_lamp",
+    "name": "Bulb (Electric / LED)",
+    "domain": "Electrical & Electronic Products",
+    "category": "Lighting Equipment",
+    "description": "General lighting lamps for household and commercial use. Choose between traditional Tungsten Filament Electric Bulbs (IS 418) and modern Self-Ballasted LED Lamps (IS 16102).",
+    "icon": "lamp",
+    "has_subtypes": true,
+    "subtypes": [
+      {
+        "id": "electric_bulb",
+        "name": "Electric Bulb",
+        "type_label": "Electric Bulb (Incandescent / Filament)",
+        "is_number": "IS 418",
+        "year_recorded": 2004,
+        "badge": "Tungsten Filament",
+        "description": "Traditional tungsten filament incandescent electric bulbs (15W - 100W, 230V AC, B22/E27).",
+        "sample_query": "Tungsten filament electric bulb 60W 230V AC for domestic lighting with B22 bayonet cap"
+      },
+      {
+        "id": "led_lamp",
+        "name": "LED Bulb",
+        "type_label": "LED Bulb (Self-Ballasted LED)",
+        "is_number": "IS 16102",
+        "year_recorded": 2017,
+        "badge": "Solid-State LED",
+        "description": "Energy-efficient self-ballasted LED lamps with integrated driver circuits (7W - 12W, B22/E27).",
+        "sample_query": "9W B22 self-ballasted LED bulb for indoor general domestic illumination"
+      }
+    ],
+    "common_ratings": ["7W - 100W", "B22 / E27 cap", "230V AC, 50Hz"],
+    "keywords": ["bulb", "electric bulb", "led lamp", "led bulb", "b22 bulb", "lighting", "incandescent", "luminaire", "बिजली का बल्ब", "एलईडी बल्ब", "ఎల్ఈడీ బల్బ్", "மின் விளக்கு"],
+    "sample_queries": [
+      "9W B22 self-ballasted LED bulb for indoor general domestic illumination",
+      "Tungsten filament electric bulb 60W 230V AC for domestic lighting with B22 bayonet cap",
+      "घर के लिए 9 वाट एलईडी बल्ब बी22 कैप"
+    ]
+  },
+  {
+    "id": "switches",
+    "name": "Switches",
+    "domain": "Electrical & Electronic Products",
+    "category": "Wiring Accessories",
+    "description": "Switches for domestic and similar fixed electrical installations, modular switchgear, rocker, and push-button types.",
+    "icon": "switch",
+    "common_ratings": ["6A", "16A", "20A", "250V AC", "1-way / 2-way"],
+    "keywords": ["switch", "modular switch", "light switch", "piano switch", "rocker switch", "स्विच", "స్విచ్", "சுவிட்ச்"],
+    "sample_queries": [
+      "16A modular flush mounting electrical switch for domestic appliances 250V AC",
+      "घरेलू बिजली के लिए 16A मॉड्यूलर स्विच",
+      "16A మాడ్యులర్ స్విచ్ గృహ ఉపకరణాల కోసం"
+    ]
+  },
+  {
+    "id": "plugs_sockets",
+    "name": "Plugs & Sockets",
+    "domain": "Electrical & Electronic Products",
+    "category": "Wiring Accessories",
+    "description": "Plugs and socket-outlets for domestic and general industrial electrical use with safety shutters and grounding pins.",
+    "icon": "plug",
+    "common_ratings": ["6A 3-pin", "16A 3-pin", "250V AC", "Shuttered"],
+    "keywords": ["plug", "socket", "outlet", "3 pin plug", "power socket", "प्लग और सॉकेट", "ప్లగ్ సాకెట్", "பிளக் சாக்கெட்"],
+    "sample_queries": [
+      "16A 3-pin shuttered electrical socket with earthing terminal for heavy appliances",
+      "16A 3-पिन शटर्ड सॉकेट अर्थिंग के साथ",
+      "16A 3-పిన్ షట్టర్డ్ సాకెట్ ఎలక్ట్రికల్ కనెక్షన్"
+    ]
+  },
+  {
+    "id": "electrical_cables",
+    "name": "Electrical Cables",
+    "domain": "Electrical & Electronic Products",
+    "category": "Cables & Conductors",
+    "description": "PVC insulated copper and aluminium electrical cables and flexible cords for building wiring up to 1100V.",
+    "icon": "cable",
+    "common_ratings": ["1.5 sq mm", "2.5 sq mm", "4.0 sq mm", "1100V Grade", "FR / FRLS"],
+    "keywords": ["cable", "wire", "copper wire", "pvc insulated cable", "building wire", "frls cable", "बिजली का तार", "విద్యుత్ వైర్లు", "மின் கேபிள்"],
+    "sample_queries": [
+      "2.5 sq mm single core copper conductor PVC insulated fire retardant building wire 1100V",
+      "घरेलू वायरिंग के लिए 2.5 वर्ग मिमी कॉपर वायर एफआरएलएस",
+      "ఇంటి వైరింగ్ కోసం 2.5 sq mm రాగి విద్యుత్ వైరు"
+    ]
+  },
+  {
+    "id": "extension_boards",
+    "name": "Extension Boards",
+    "domain": "Electrical & Electronic Products",
+    "category": "Wiring Accessories",
+    "description": "Cord extension sets, surge protected power strips, and portable multi-outlet extension boards for consumer electronics.",
+    "icon": "extension",
+    "common_ratings": ["6A/16A combined", "Surge protected", "1.5m - 5m cord length", "250V AC"],
+    "keywords": ["extension board", "extension cord", "power strip", "spike guard", "multi socket", "एक्सटेंशन बोर्ड", "ఎక్స్‌టెన్షన్ బోర్డు"],
+    "sample_queries": [
+      "4-way surge protected cord extension board with master switch and fuse",
+      "सर्ज सुरक्षा के साथ 4-वे एक्सटेंशन बोर्ड",
+      "సర్జ్ ప్రొటెక్షన్‌తో కూడిన 4-సాకెట్ ఎక్స్‌టెన్షన్ బోర్డ్"
+    ]
+  },
+  {
+    "id": "water_heater",
+    "name": "Electric Water Heater",
+    "domain": "Electrical & Electronic Products",
+    "category": "Heating Appliances",
+    "description": "Stationary electric storage water heaters (geysers) and instantaneous water heaters with pressure-rated tanks.",
+    "icon": "geyser",
+    "common_ratings": ["15L", "25L", "2000W", "3000W", "8 Bar pressure rating", "230V AC"],
+    "keywords": ["water heater", "geyser", "storage water heater", "instant water heater", "गीज़र", "వాటర్ హీటర్", "வாட்டர் ஹீட்டர்"],
+    "sample_queries": [
+      "25 litre storage electric water heater 2000W with thermostat and safety relief valve",
+      "25 लीटर स्टोरेज इलेक्ट्रिक वॉटर हीटर गीजर",
+      "25 లీటర్ల నిల్వ ఎలక్ట్రిక్ వాటర్ హీటర్ గీజర్"
+    ]
+  },
+  {
+    "id": "microwave_oven",
+    "name": "Microwave Oven",
+    "domain": "Electrical & Electronic Products",
+    "category": "Cooking Appliances",
+    "description": "Domestic microwave ovens and combination microwave-grill-convection appliances operating on 2450 MHz ISM frequency.",
+    "icon": "microwave",
+    "common_ratings": ["800W microwave", "1200W grill", "20L - 32L capacity", "230V AC, 50Hz"],
+    "keywords": ["microwave oven", "microwave", "convection oven", "grill microwave", "माइक्रोवेव ओवन", "మైక్రోవేవ్ ఓవెన్"],
+    "sample_queries": [
+      "Domestic convection microwave oven with door interlock safety and child lock",
+      "घरेलू कन्वेक्शन माइक्रोवेव ओवन सुरक्षा इंटरलॉक के साथ",
+      "కన్వెక్షన్ మైక్రోవేవ్ ఓవెన్ భద్రతా తాళంతో"
+    ]
+  }
+]

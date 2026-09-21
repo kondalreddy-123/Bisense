@@ -1,0 +1,1271 @@
+[
+  {
+    "id": "std_is_302_2_15",
+    "is_number": "IS 302-2-15",
+    "title": "Safety of Household and Similar Electrical Appliances - Part 2-15: Particular Requirements for Appliances for Heating Liquids (Electric Cookers, Kettles)",
+    "domain": "Electrical & Electronic Products",
+    "product": "Electric Cooker",
+    "product_id": "electric_cooker",
+    "scope": "This standard deals with the safety of electric appliances for heating liquids and domestic cooking appliances, such as electric cookers, pressure cookers, slow cookers, egg boilers, and electric kettles, their rated voltage being not more than 250V for single-phase appliances and 480V for other appliances. Appliances intended for normal household use and similar applications in hotels, boarding houses, and residential environments are covered.",
+    "requirements": [
+      "Appliance heating elements shall be securely mounted and enclosed to avoid direct contact with food or liquids during normal operation.",
+      "Heating vessels shall withstand internal steam pressure generated during boiling cycles without deformation or steam leakage from unauthorized gaskets.",
+      "Supply cords shall be fitted with strain relief capable of withstanding 100N pull force without cord displacement.",
+      "All metallic parts likely to become live in case of insulation breakdown shall be permanently connected to a reliable earthing terminal."
+    ],
+    "performance": [
+      "Thermal efficiency of boiling vessel shall not be less than 75% for enclosed plate heaters.",
+      "Temperature overshoot of vessel surface during automatic cycling must remain within ±5°C of preset thermostat values.",
+      "Energy consumption during standard water boiling test shall be within ±10% of manufacturer declared rating.",
+      "Lid sealing gaskets shall maintain integrity over a minimum of 2000 thermal cycles."
+    ],
+    "safety": [
+      "Equipped with non-self-resetting thermal cut-off device preventing runaway temperature in dry-boil conditions.",
+      "Creepage distance and clearance between live parts and accessible enclosure shall be at least 4.0 mm.",
+      "Leakage current under operating temperature shall not exceed 0.75 mA for Class I portable appliances.",
+      "Handles, grips, and knobs shall not exceed maximum temperature rise of 35K for plastic materials and 25K for metallic parts during continuous operation."
+    ],
+    "testing": [
+      "High Voltage Dielectric Test: Withstand 1250V AC test voltage for 1 minute between live terminals and earthed chassis without puncture or flashover.",
+      "Abnormal Operation Test: Operation without water (dry-boil) at 1.15 times rated input until thermal cutout activates; appliance shall remain electrically safe.",
+      "Moisture Resistance Test: Subjected to spillage of 0.5L salt solution over the top surface followed by 24-hour humidity chamber at 93% RH.",
+      "Cord Anchorage Pull Test: 25 pulls of 60N followed by a torque test of 0.25 Nm without slippage exceeding 2 mm."
+    ],
+    "marking": [
+      "Rated voltage or voltage range in Volts (e.g., 230V AC ~).",
+      "Rated input power in Watts (W) or Kilowatts (kW).",
+      "Symbol for nature of supply (50 Hz, AC only).",
+      "Manufacturer's name, registered trademark, and country of origin.",
+      "Model identification or serial number.",
+      "ISI Certification Mark with Standard IS number displayed on nameplate.",
+      "Warning label: 'Do not immerse in water during cleaning'."
+    ],
+    "sampling": [
+      "Type testing shall be carried out on two complete prototype samples selected at random from production.",
+      "Routine factory testing for earthing continuity and dielectric strength shall be conducted on 100% of finished production units.",
+      "Lot acceptance criteria: Acceptance Quality Limit (AQL) of 1.0% for major safety defects per IS 2500 sampling plan."
+    ],
+    "technical_details": [
+      "Rated Voltage: 230V ± 6%, single-phase, 50 Hz.",
+      "Power Rating Range: Typically 500W to 2200W.",
+      "Protection Class: Class I (with earthing conductor) or Class II (double insulated).",
+      "Water Ingress Protection: Minimum IPX1 for liquid boiling appliances.",
+      "Cord Specification: 3-core flexible cord with minimum cross-sectional area of 0.75 sq mm complying with IS 694."
+    ],
+    "related_standards": [
+      {
+        "category": "Safety Standard",
+        "is_number": "IS 302-1",
+        "title": "Safety of Household and Similar Electrical Appliances - General Requirements",
+        "official_bis_url": "https://standardsbis.bsbedge.com/Home/Search?StandardNumber=IS+302-1",
+        "year_recorded": 2008
+      },
+      {
+        "category": "Testing Standard",
+        "is_number": "IS 9000",
+        "title": "Basic Environmental Testing Procedures for Electronic and Electrical Items",
+        "official_bis_url": "https://standardsbis.bsbedge.com/Home/Search?StandardNumber=IS+9000",
+        "year_recorded": 1988
+      },
+      {
+        "category": "Product Standard",
+        "is_number": "IS 13947",
+        "title": "Low-Voltage Switchgear and Controlgear for Electrical Appliances",
+        "official_bis_url": "https://standardsbis.bsbedge.com/Home/Search?StandardNumber=IS+13947",
+        "year_recorded": 1993
+      },
+      {
+        "category": "Installation Standard",
+        "is_number": "IS 732",
+        "title": "Code of Practice for Electrical Wiring Installations",
+        "official_bis_url": "https://standardsbis.bsbedge.com/Home/Search?StandardNumber=IS+732",
+        "year_recorded": 2019
+      }
+    ],
+    "source": "Bureau of Indian Standards (BIS)",
+    "disclaimer": "DEMO DATA — Verify against the authoritative BIS publication.",
+    "official_bis_url": "https://standardsbis.bsbedge.com/Home/Search?StandardNumber=IS+302-2-15",
+    "year_recorded": 2009,
+    "version": "2009 (Reaffirmed 2019)",
+    "percentages": {
+      "safety": 100,
+      "performance": 96,
+      "testing": 98,
+      "compliance": 100,
+      "reliability": 95
+    },
+    "applicability": "Domestic and commercial electrical cooking, boiling, and liquid heating appliances rated single-phase up to 250V AC.",
+    "status": "Active / Current Standard"
+  },
+  {
+    "id": "std_is_302_2_3",
+    "is_number": "IS 302-2-3",
+    "title": "Safety of Household and Similar Electrical Appliances - Part 2-3: Particular Requirements for Electric Irons",
+    "domain": "Electrical & Electronic Products",
+    "product": "Electric Iron",
+    "product_id": "electric_iron",
+    "scope": "Applies to electric dry irons and steam irons, including irons with a separate water reservoir or boiler having a capacity not exceeding 5 litres, for household and similar use. Rated voltage not exceeding 250V AC single phase.",
+    "requirements": [
+      "The soleplate shall provide uniform temperature distribution across the ironing surface.",
+      "Thermostat knob shall have clear temperature gradation markings matching textile fiber settings (Nylon, Silk, Wool, Cotton, Linen).",
+      "Cord inlet shall incorporate an anti-kink flexible sleeve of at least 50 mm length to prevent sharp bending.",
+      "Soleplate heel rest must support the iron stably at an angle between 65° and 85° on a 15° inclined plane without tipping."
+    ],
+    "performance": [
+      "Soleplate heating time to reach 200°C shall not exceed 180 seconds at rated 1000W-1500W input.",
+      "Soleplate temperature fluctuation at maximum thermostat setting shall be within ±12°C during steady state.",
+      "Steam output rate for steam irons shall be at least 15 grams/minute continuous output.",
+      "Non-stick fluoropolymer soleplate coating shall withstand 10,000 abrasion test cycles without peeling."
+    ],
+    "safety": [
+      "Fitted with thermal fuse (thermal cut-off) that permanently isolates supply if thermostat contacts weld together.",
+      "Accessible plastic housing temperature shall not exceed 60°C during maximum continuous thermostat operation.",
+      "Leakage current between soleplate and live parts shall not exceed 0.75 mA under hot operating conditions.",
+      "Water reservoir shall prevent pressurized steam leakage through filling orifice."
+    ],
+    "testing": [
+      "Flexing Test of Supply Cord: Subject cord inlet to 20,000 flexings through 90° angle under 10N tension while carrying rated current.",
+      "Soleplate Drop Impact Test: Iron dropped from 100 mm height onto wooden board 100 times; no electrical or mechanical hazard permitted.",
+      "Dielectric Voltage Test: 1250V AC applied for 60 seconds between heating element and soleplate.",
+      "Steam Chamber Burst Pressure Test: Steam vessel tested at 1.5 times maximum relief valve opening pressure."
+    ],
+    "marking": [
+      "Rated voltage in Volts (e.g. 230V AC).",
+      "Rated power input in Watts (e.g. 1200W).",
+      "Manufacturer's name and brand mark.",
+      "Thermostat dial markings in accordance with international fabric care symbols.",
+      "ISI mark with standard designation IS 302-2-3."
+    ],
+    "sampling": [
+      "Initial verification: 3 samples subjected to complete type testing sequence.",
+      "Routine test: 100% production inspection for dielectric strength and earth continuity."
+    ],
+    "technical_details": [
+      "Rated Voltage: 230V AC, 50 Hz.",
+      "Input Power: 750W to 2200W.",
+      "Insulation Class: Class I with braided heat-resistant rubber cord (Type H05RR-F).",
+      "Thermostat range: 70°C (minimum) to 220°C (maximum soleplate temperature)."
+    ],
+    "related_standards": [
+      {
+        "category": "Safety Standard",
+        "is_number": "IS 302-1",
+        "title": "Safety of Household and Similar Electrical Appliances - General Requirements",
+        "official_bis_url": "https://standardsbis.bsbedge.com/Home/Search?StandardNumber=IS+302-1",
+        "year_recorded": 2008
+      },
+      {
+        "category": "Performance Standard",
+        "is_number": "IS 366",
+        "title": "Electric Irons - Methods of Measuring Performance",
+        "official_bis_url": "https://standardsbis.bsbedge.com/Home/Search?StandardNumber=IS+366",
+        "year_recorded": 1991
+      },
+      {
+        "category": "Related Product Standard",
+        "is_number": "IS 1293",
+        "title": "Plugs and Socket-Outlets of Rated Voltage up to 250V",
+        "official_bis_url": "https://standardsbis.bsbedge.com/Home/Search?StandardNumber=IS+1293",
+        "year_recorded": 2019
+      }
+    ],
+    "source": "Bureau of Indian Standards (BIS)",
+    "disclaimer": "DEMO DATA — Verify against the authoritative BIS publication.",
+    "official_bis_url": "https://standardsbis.bsbedge.com/Home/Search?StandardNumber=IS+302-2-3",
+    "year_recorded": 2007,
+    "version": "2007 (Reaffirmed 2017)",
+    "percentages": {
+      "safety": 100,
+      "performance": 95,
+      "testing": 98,
+      "compliance": 100,
+      "reliability": 94
+    },
+    "applicability": "Domestic and commercial electric dry irons and steam irons rated single-phase up to 250V AC.",
+    "status": "Active / Current Standard"
+  },
+  {
+    "id": "std_is_374",
+    "is_number": "IS 374",
+    "title": "Electric Ceiling Fans and Regulators - Specification",
+    "domain": "Electrical & Electronic Products",
+    "product": "Electric Fan",
+    "product_id": "electric_fan",
+    "scope": "Specifies requirements and methods of tests for AC ceiling fans with shaded-pole or capacitor motors and BLDC motors, complete with electronic or resistance speed regulators, intended for domestic, commercial, and industrial ventilation.",
+    "requirements": [
+      "Fan blades shall be fabricated from high-grade aluminium alloy or engineered polymer with uniform balance.",
+      "Motor body and down-rod shall be secured with double safety split-pins and secondary safety wire rope.",
+      "Electronic regulators must not introduce radio frequency interference into the electrical network exceeding CISPR limits.",
+      "Bearings shall be sealed, pre-lubricated ball bearings rated for at least 30,000 continuous operating hours."
+    ],
+    "performance": [
+      "Air delivery shall not be less than 210 cubic metres/min (cu.m/min) for 1200 mm sweep at rated voltage.",
+      "Service Value (air delivery divided by power input) shall be at least 4.0 cu.m/min/Watt for 5-star energy rated fans.",
+      "BLDC fan power consumption shall not exceed 35W at top speed for 1200 mm sweep.",
+      "Speed variation: Regulator must provide at least 4 distinct speed steps with minimum 50% speed reduction at lowest step."
+    ],
+    "safety": [
+      "Suspension system must support 10 times the complete weight of the fan assembly (minimum 100 kg test load) for 1 hour without permanent distortion.",
+      "Insulation resistance between windings and frame shall not be less than 2 Megaohms.",
+      "Motor temperature rise shall not exceed 75K for Class E insulation and 90K for Class B insulation at maximum continuous speed.",
+      "Shackle clamp bolt must have locking nuts to eliminate loosening caused by motor torque vibrations."
+    ],
+    "testing": [
+      "Air Delivery Test in accordance with test chamber specified in IS 374 using vane anemometer at 32 grid coordinates.",
+      "Endurance Run Test: Continuous 1000 hours running test at 1.06 times rated voltage followed by dielectric test.",
+      "Down-rod Tensile Safety Test: Static tensile load of 1000N applied to assembled down-rod and suspension bracket.",
+      "High Voltage Test: 1500V AC applied between windings and fan body for 60 seconds."
+    ],
+    "marking": [
+      "Rated voltage (230V AC) and frequency (50 Hz).",
+      "Rated sweep size in millimeters (e.g. 1200 mm).",
+      "Power consumption in Watts and Air Delivery in cu.m/min.",
+      "BEE Star Rating label indicating annual energy consumption.",
+      "Direction of blade rotation arrow mark.",
+      "Manufacturer name and IS 374 ISI certification insignia."
+    ],
+    "sampling": [
+      "Batch sampling per IS 2500 Level II normal inspection.",
+      "Sample size of 5 fans per lot of 1000 units for air delivery and power consumption audits."
+    ],
+    "technical_details": [
+      "Sweep Sizes: 900 mm, 1050 mm, 1200 mm, 1400 mm.",
+      "Motor Type: Permanent Split Capacitor (PSC) or Brushless DC (BLDC).",
+      "Speed Range: 300 to 380 RPM at maximum speed.",
+      "Power Factor: Not less than 0.90 for BLDC models and 0.80 for capacitor models."
+    ],
+    "related_standards": [
+      {
+        "category": "Safety Standard",
+        "is_number": "IS 302-2-80",
+        "title": "Particular Requirements for Electric Fans and Regulators",
+        "official_bis_url": "https://standardsbis.bsbedge.com/Home/Search?StandardNumber=IS+302-2-80",
+        "year_recorded": 2017
+      },
+      {
+        "category": "Testing Standard",
+        "is_number": "IS 9000",
+        "title": "Basic Environmental Testing Procedures for Electronic Items",
+        "official_bis_url": "https://standardsbis.bsbedge.com/Home/Search?StandardNumber=IS+9000",
+        "year_recorded": 1988
+      },
+      {
+        "category": "Installation Standard",
+        "is_number": "IS 732",
+        "title": "Code of Practice for Electrical Wiring Installations",
+        "official_bis_url": "https://standardsbis.bsbedge.com/Home/Search?StandardNumber=IS+732",
+        "year_recorded": 2019
+      }
+    ],
+    "source": "Bureau of Indian Standards (BIS)",
+    "disclaimer": "DEMO DATA — Verify against the authoritative BIS publication.",
+    "official_bis_url": "https://standardsbis.bsbedge.com/Home/Search?StandardNumber=IS+374",
+    "year_recorded": 2019,
+    "version": "2019 (Fifth Revision)",
+    "percentages": {
+      "safety": 100,
+      "performance": 97,
+      "testing": 98,
+      "compliance": 100,
+      "reliability": 96
+    },
+    "applicability": "Electric ceiling fans and regulators for domestic, commercial, and industrial air circulation applications.",
+    "status": "Active / Current Standard"
+  },
+  {
+    "id": "std_is_17550",
+    "is_number": "IS 17550",
+    "title": "Household Refrigerating Appliances - Characteristics and Test Methods (Refrigerators & Freezers)",
+    "domain": "Electrical & Electronic Products",
+    "product": "Refrigerator",
+    "product_id": "refrigerator",
+    "scope": "Applies to factory-assembled household refrigerating appliances with vapor compression refrigeration systems, including direct cool and frost-free refrigerators, frost-free refrigerator-freezers, and food freezers with gross storage capacity up to 850 litres.",
+    "requirements": [
+      "Hermetic compressor unit shall be resiliently mounted with vibration isolators to minimize structure-borne noise.",
+      "Refrigerant fluid must comply with environmental guidelines (zero ODP refrigerants such as Isobutane R600a or R134a).",
+      "Door gaskets shall incorporate magnetic sealing strips maintaining airtight seal around full perimeter.",
+      "Food liner shelves shall be shatter-proof tempered glass or food-grade high-impact polystyrene (HIPS)."
+    ],
+    "performance": [
+      "Storage temperature in fresh food compartment shall stay between 0°C and +4°C under standard ambient test conditions (32°C).",
+      "Freezer compartment temperature shall achieve -18°C or colder for 3-star and 4-star freezer sections.",
+      "Pull-down time: Compartment shall cool from 32°C to target storage temperature within 4 hours.",
+      "Daily energy consumption must meet BEE (Bureau of Energy Efficiency) Star Rating criteria for specified net volume."
+    ],
+    "safety": [
+      "Class I electrical appliance with three-pin grounded plug and mandatory earthing of compressor shell and chassis.",
+      "For flammable hydrocarbon refrigerants (R600a), electrical components (thermostats, switches, relays) must be non-sparking / sealed to prevent ignition in case of leak.",
+      "Flammability warning labels prominently displayed on rear condenser and compressor compartment.",
+      "Defrost heater elements must be equipped with thermal fuses to prevent overheating."
+    ],
+    "testing": [
+      "Thermal Insulation & Air Leakage Test: Smoke test and thermal imaging to verify gasket sealing.",
+      "High Ambient Temperature Storage Test at 43°C ambient temperature (Tropical Class T rating) for 48 hours.",
+      "High Voltage Dielectric Withstand: 1500V AC for 60 seconds between electrical circuit and outer casing.",
+      "Mechanical Strength of Shelves: Static uniform load test of 20 kg on intermediate shelf without permanent sag exceeding 3 mm."
+    ],
+    "marking": [
+      "Net usable volume of fresh food and freezer compartments in litres.",
+      "Climate class designation (T - Tropical, 16°C to 43°C).",
+      "Chemical formula of refrigerant and total refrigerant charge in grams (e.g., R600a, 48g).",
+      "Rated voltage (230V AC), rated current, and power input.",
+      "BEE Star Rating label and BIS certification mark."
+    ],
+    "sampling": [
+      "Complete type test on 2 production units.",
+      "Routine 100% factory verification of refrigerant helium leak detection and earth continuity."
+    ],
+    "technical_details": [
+      "Operating Voltage: 230V AC ± 10%, 50 Hz.",
+      "Refrigerant: R600a (Isobutane) or R134a (Tetrafluoroethane).",
+      "Compressor: Inverter controlled variable speed or reciprocating hermetic compressor.",
+      "Blowing Agent: Cyclopentane eco-friendly insulation foam."
+    ],
+    "related_standards": [
+      {
+        "category": "Safety Standard",
+        "is_number": "IS 302-2-24",
+        "title": "Particular Requirements for Refrigerating Appliances, Ice-Cream Appliances and Ice-Makers",
+        "official_bis_url": "https://standardsbis.bsbedge.com/Home/Search?StandardNumber=IS+302-2-24",
+        "year_recorded": 2010
+      },
+      {
+        "category": "Product Standard",
+        "is_number": "IS 15750",
+        "title": "Direct Cool Household Refrigerators with Compression Type System",
+        "official_bis_url": "https://standardsbis.bsbedge.com/Home/Search?StandardNumber=IS+15750",
+        "year_recorded": 2006
+      },
+      {
+        "category": "Testing Standard",
+        "is_number": "IS 9000",
+        "title": "Basic Environmental Testing Procedures for Electronic Items",
+        "official_bis_url": "https://standardsbis.bsbedge.com/Home/Search?StandardNumber=IS+9000",
+        "year_recorded": 1988
+      }
+    ],
+    "source": "Bureau of Indian Standards (BIS)",
+    "disclaimer": "DEMO DATA — Verify against the authoritative BIS publication.",
+    "official_bis_url": "https://standardsbis.bsbedge.com/Home/Search?StandardNumber=IS+17550",
+    "year_recorded": 2021,
+    "version": "2021 (First Edition)",
+    "percentages": {
+      "safety": 100,
+      "performance": 96,
+      "testing": 99,
+      "compliance": 100,
+      "reliability": 97
+    },
+    "applicability": "Household frost-free and direct-cool refrigerating appliances and food freezers up to 1000 litres capacity.",
+    "status": "Active / Current Standard"
+  },
+  {
+    "id": "std_is_14155",
+    "is_number": "IS 14155",
+    "title": "Domestic Electric Clothes Washing Machines - Specification",
+    "domain": "Electrical & Electronic Products",
+    "product": "Washing Machine",
+    "product_id": "washing_machine",
+    "scope": "Specifies constructional and performance requirements and methods of test for electric clothes washing machines for household use, including top loading and front loading, semi-automatic twin tub, and fully automatic machines with or without water heating facilities.",
+    "requirements": [
+      "Wash tub and spin basket shall be constructed from austenitic stainless steel (grade 304) or virgin polypropylene.",
+      "Water inlet solenoid valve shall incorporate a backflow prevention check valve to avoid contaminating drinking water mains.",
+      "Door or lid interlock mechanism shall prevent spinning basket operation when open and lock lid during spin cycle exceeding 60 RPM.",
+      "Pulsator/agitator drive belt and pulley mechanism shall be safely guarded against accidental human contact."
+    ],
+    "performance": [
+      "Washing Performance Index (WPI) shall be at least 0.80 compared to standard reference washing machine.",
+      "Rinsing efficiency: Residual detergent concentration in final rinse water must not exceed 0.05 g/L.",
+      "Water extraction efficiency: Remaining moisture content after spin cycle shall not exceed 65% for cotton test load.",
+      "Specific water consumption shall not exceed 15 litres per kilogram of rated clothes capacity."
+    ],
+    "safety": [
+      "Water ingress rating of at least IPX4 (splash-proof enclosure) for entire machine cabinet.",
+      "All internal wiring insulated with heat and moisture resistant insulation rated for 105°C.",
+      "Double motor earthing or Class II motor insulation preventing chassis electrification during water spillage.",
+      "Built-in child lock preventing cycle alterations while in operation."
+    ],
+    "testing": [
+      "Spillage and Overflow Test: 20 litres of water poured into wash tub with drain valve closed to verify electrical enclosure stays dry.",
+      "Endurance Test: 1500 wash-rinse-spin cycles under nominal laundry load without mechanical failure.",
+      "Spin Drum Deceleration Test: Spin basket must brake to a complete stop within 7 seconds of lid opening.",
+      "Earth Continuity Test: Earth conductor resistance between plug grounding pin and outer metal cabinet shall not exceed 0.1 Ohm."
+    ],
+    "marking": [
+      "Rated washing capacity and spin capacity in Kilograms (kg) dry textiles.",
+      "Rated electrical power consumption for washing, spinning, and water heating.",
+      "Maximum and minimum water supply pressure in Pascals (or kPa / bar).",
+      "Serial number, manufacturing date, and ISI Certification Mark."
+    ],
+    "sampling": [
+      "Type test on two fully equipped production units.",
+      "Batch inspection per IS 2500 sampling plan."
+    ],
+    "technical_details": [
+      "Rated Voltage: 230V AC, 50 Hz.",
+      "Motor Ratings: Wash motor 350W-500W, Spin motor 200W-350W, Heating element up to 1500W.",
+      "Water Pressure Range: 0.03 MPa to 1.0 MPa (0.3 bar to 10 bar).",
+      "Spin Speed: 700 RPM to 1400 RPM."
+    ],
+    "related_standards": [
+      {
+        "category": "Safety Standard",
+        "is_number": "IS 302-2-7",
+        "title": "Particular Requirements for Domestic Electric Washing Machines",
+        "official_bis_url": "https://standardsbis.bsbedge.com/Home/Search?StandardNumber=IS+302-2-7",
+        "year_recorded": 2010
+      },
+      {
+        "category": "Testing Standard",
+        "is_number": "IS 9000",
+        "title": "Basic Environmental Testing Procedures for Electronic Items",
+        "official_bis_url": "https://standardsbis.bsbedge.com/Home/Search?StandardNumber=IS+9000",
+        "year_recorded": 1988
+      },
+      {
+        "category": "Installation Standard",
+        "is_number": "IS 732",
+        "title": "Code of Practice for Electrical Wiring Installations",
+        "official_bis_url": "https://standardsbis.bsbedge.com/Home/Search?StandardNumber=IS+732",
+        "year_recorded": 2019
+      }
+    ],
+    "source": "Bureau of Indian Standards (BIS)",
+    "disclaimer": "DEMO DATA — Verify against the authoritative BIS publication.",
+    "official_bis_url": "https://standardsbis.bsbedge.com/Home/Search?StandardNumber=IS+14155",
+    "year_recorded": 1994,
+    "version": "1994 (Reaffirmed 2020)",
+    "percentages": {
+      "safety": 100,
+      "performance": 95,
+      "testing": 97,
+      "compliance": 100,
+      "reliability": 94
+    },
+    "applicability": "Electric clothes washing machines for domestic and commercial laundry use, semi-automatic and fully automatic.",
+    "status": "Active / Current Standard"
+  },
+  {
+    "id": "std_is_16102",
+    "is_number": "IS 16102",
+    "title": "Self-Ballasted LED Lamps for General Lighting Services - Part 1: Safety Requirements & Part 2: Performance Requirements",
+    "domain": "Electrical & Electronic Products",
+    "product": "LED Bulb / Lamp",
+    "product_id": "led_lamp",
+    "scope": "Covers safety and performance requirements for self-ballasted LED lamps having a rated wattage up to 60W, a rated voltage from 50V up to 250V AC 50Hz, with B22d or E27 lamp caps, intended for domestic and general lighting purposes.",
+    "requirements": [
+      "Cap construction shall comply with IS 11000 standards; mechanical torsion strength of lamp cap must withstand 3.0 Nm without loosening.",
+      "Diffuser dome shall be made of UV-stabilized, shatter-resistant flame retardant polycarbonate.",
+      "Internal electronic driver must incorporate over-voltage protection (up to 440V surge) and thermal foldback.",
+      "Power factor of driver shall not be less than 0.90 for lamps rated above 5W."
+    ],
+    "performance": [
+      "Luminous efficacy shall not be less than 100 lumens/Watt for general warm white and cool daylight models.",
+      "Lumen maintenance: Lamp shall retain at least 90% of initial luminous flux after 6,000 hours of continuous burn.",
+      "Colour Rendering Index (CRI, Ra) shall be greater than or equal to 80.",
+      "Correlated Colour Temperature (CCT) tolerances shall lie within MacAdam 5-step ellipse."
+    ],
+    "safety": [
+      "Accessible parts shall not become electrically live; insulation between electronic circuit and outer heat sink shall exceed 2 Megaohms.",
+      "Total harmonic distortion (THD) of input current shall be less than 20% to prevent grid disturbance.",
+      "Photobiological safety: Lamps must comply with 'Exempt Group' or 'Risk Group 1' under IS 16108 for blue light hazard.",
+      "Flame resistance: Plastic enclosure must pass 650°C glow-wire flammability test."
+    ],
+    "testing": [
+      "High Voltage Surge Immunity Test: 2.5 kV ring wave surge applied between phase and neutral lines.",
+      "Switching Endurance Test: 15,000 cycles of 30 seconds ON and 30 seconds OFF at nominal supply voltage.",
+      "Cap Temperature Rise Test: Measured cap temperature shall not exceed 120°C during steady state operation.",
+      "Accelerated Life Test at 45°C ambient temperature for 2,000 hours."
+    ],
+    "marking": [
+      "Rated Wattage (e.g., 9W, 12W) and Luminous Flux in Lumens (lm).",
+      "Nominal Voltage (230V AC) and frequency (50 Hz).",
+      "Correlated Colour Temperature (e.g. 6500K Cool White or 3000K Warm White).",
+      "Lamp cap size (B22d bayonet or E27 screw).",
+      "Country of manufacture, batch code, and mandatory ISI mark with IS 16102 designation."
+    ],
+    "sampling": [
+      "Lot sampling per IS 2500 for luminous flux, efficacy, and color coordinates.",
+      "Sample size of 20 lamps per lot for photometric tests."
+    ],
+    "technical_details": [
+      "Rated Voltage: 220-240V AC, 50 Hz.",
+      "Operating Voltage Window: 140V to 300V AC.",
+      "Luminous Efficacy: 100 - 130 lm/W.",
+      "Beam Angle: ≥ 180 degrees.",
+      "Cap Types: Bayonet B22d or Edison screw E27."
+    ],
+    "related_standards": [
+      {
+        "category": "Safety Standard",
+        "is_number": "IS 16108",
+        "title": "Photobiological Safety of Lamps and Lamp Systems",
+        "official_bis_url": "https://standardsbis.bsbedge.com/Home/Search?StandardNumber=IS+16108",
+        "year_recorded": 2012
+      },
+      {
+        "category": "Testing Standard",
+        "is_number": "IS 16105",
+        "title": "Method of Measurement of Lumen Maintenance of Solid-State Light Sources",
+        "official_bis_url": "https://standardsbis.bsbedge.com/Home/Search?StandardNumber=IS+16105",
+        "year_recorded": 2012
+      },
+      {
+        "category": "Product Standard",
+        "is_number": "IS 15885",
+        "title": "Lamp Controlgear - Part 2-13: Particular Requirements for DC or AC Supplied Electronic Controlgear for LED Modules",
+        "official_bis_url": "https://standardsbis.bsbedge.com/Home/Search?StandardNumber=IS+15885",
+        "year_recorded": 2011
+      }
+    ],
+    "source": "Bureau of Indian Standards (BIS)",
+    "disclaimer": "DEMO DATA — Verify against the authoritative BIS publication.",
+    "official_bis_url": "https://standardsbis.bsbedge.com/Home/Search?StandardNumber=IS+16102",
+    "year_recorded": 2017,
+    "version": "2017 (Part 1: 2012, Part 2: 2017)",
+    "percentages": {
+      "safety": 100,
+      "performance": 98,
+      "testing": 99,
+      "compliance": 100,
+      "reliability": 97
+    },
+    "applicability": "Self-ballasted LED lamps for general lighting services working on supply voltage up to 250V 50Hz with B22d or E27 caps.",
+    "status": "Active / Current Standard"
+  },
+  {
+    "id": "std_is_418",
+    "is_number": "IS 418",
+    "title": "Tungsten Filament Lamps for Domestic and Similar General Lighting Purposes - Specification (Electric Bulbs)",
+    "domain": "Electrical & Electronic Products",
+    "product": "Electric Bulb (Incandescent)",
+    "product_id": "electric_bulb",
+    "scope": "Applies to tungsten filament incandescent electric lamps and bulbs for domestic and general lighting services, having a rated wattage of 15W up to 1000W and a rated voltage of 230V or 250V AC, with bayonet (B22d) or Edison screw (E27) caps.",
+    "requirements": [
+      "Bulb glass envelope shall be clear, frosted, or opal, free from visible flaws, bubbles, or strains affecting mechanical strength.",
+      "Filament wire shall be uniform electrolytic tungsten wire securely clamped to molybdenum support leads without deformation.",
+      "Lamp cap attachment to glass bulb shall withstand a minimum mechanical torque of 3.0 Nm throughout rated service life.",
+      "Internal fuse wire shall be built into the stem to safely extinguish arcing at end of filament life."
+    ],
+    "performance": [
+      "Initial luminous flux and wattage shall comply with nominal ratings within ±10% at rated voltage.",
+      "Rated average lumen life shall not be less than 1000 hours of normal domestic operation.",
+      "Lumen maintenance: Lamp shall retain at least 85% of initial luminous output after 750 hours of burning."
+    ],
+    "safety": [
+      "Lamp cap insulation shall maintain dielectric withstand of 1000V AC between contact plates and brass shell.",
+      "No arcing or explosive failure of glass bulb permitted when filament fails at 1.1 times rated voltage.",
+      "Torsion strength of bayonet pins shall withstand 25N shear force without shearing or loosening."
+    ],
+    "testing": [
+      "Life Test: Accelerated life testing at rated voltage in standard burning positions with 15-minute off intervals.",
+      "Cap Torsion Test: Torque wrench test applying 3.0 Nm torque to cap before and after life testing.",
+      "Dielectric Strength Test: 1000V AC test voltage applied between cap shell and contacts for 60 seconds."
+    ],
+    "marking": [
+      "Rated voltage in Volts (e.g. 230V).",
+      "Rated wattage in Watts (e.g. 40W, 60W, 100W).",
+      "Manufacturer's name or trademark.",
+      "Country of origin and ISI certification mark with IS 418 standard number."
+    ],
+    "sampling": [
+      "Type test on batch of 25 lamps per lot.",
+      "Routine factory inspection of filament continuity and vacuum / gas fill purity."
+    ],
+    "technical_details": [
+      "Rated Voltage: 230V / 250V AC, 50 Hz.",
+      "Wattages: 15W, 25W, 40W, 60W, 100W, 200W.",
+      "Cap Sizes: B22d Bayonet or E27 Edison screw.",
+      "Gas Fill: Argon and nitrogen mixture or vacuum."
+    ],
+    "related_standards": [
+      {
+        "category": "Product Standard",
+        "is_number": "IS 16102",
+        "title": "Self-Ballasted LED Lamps for General Lighting Services",
+        "official_bis_url": "https://standardsbis.bsbedge.com/Home/Search?StandardNumber=IS+16102",
+        "year_recorded": 2017
+      },
+      {
+        "category": "Safety Standard",
+        "is_number": "IS 16108",
+        "title": "Photobiological Safety of Lamps and Lamp Systems",
+        "official_bis_url": "https://standardsbis.bsbedge.com/Home/Search?StandardNumber=IS+16108",
+        "year_recorded": 2012
+      },
+      {
+        "category": "Testing Standard",
+        "is_number": "IS 9000",
+        "title": "Basic Environmental Testing Procedures for Electronic Items",
+        "official_bis_url": "https://standardsbis.bsbedge.com/Home/Search?StandardNumber=IS+9000",
+        "year_recorded": 1988
+      }
+    ],
+    "source": "Bureau of Indian Standards (BIS)",
+    "disclaimer": "DEMO DATA — Verify against the authoritative BIS publication.",
+    "official_bis_url": "https://standardsbis.bsbedge.com/Home/Search?StandardNumber=IS+418",
+    "year_recorded": 2004,
+    "version": "2004 (Fourth Revision)",
+    "percentages": {
+      "safety": 100,
+      "performance": 94,
+      "testing": 97,
+      "compliance": 100,
+      "reliability": 93
+    },
+    "applicability": "Tungsten filament lamps for domestic and general service electric lighting (25W to 200W, 230V-250V AC/DC).",
+    "status": "Active / Current Standard"
+  },
+  {
+    "id": "std_is_3854",
+    "is_number": "IS 3854",
+    "title": "Switches for Domestic and Similar Fixed Electrical Installations - Specification",
+    "domain": "Electrical & Electronic Products",
+    "product": "Switches",
+    "product_id": "switches",
+    "scope": "Specifies manually operated general purpose switches for AC only, with a rated voltage not exceeding 440V and a rated current not exceeding 63A, intended for domestic and similar fixed electrical installations, both indoors and outdoors.",
+    "requirements": [
+      "Terminals shall accommodate solid or stranded copper conductors from 1.0 sq mm to 4.0 sq mm without wire cutting.",
+      "Moving contacts shall provide rapid, positive snap-action make-and-break independent of operating speed.",
+      "Modular mounting frames and faceplates shall be molded from flame-retardant, high-grade polycarbonate with high impact resistance.",
+      "Clear visual indication of switch status ('ON' with red indicator dot / marker or toggle orientation)."
+    ],
+    "performance": [
+      "Normal Operation Endurance: Switch shall perform 40,000 mechanical and electrical operations (make and break) at rated voltage and rated current with cos phi 0.6.",
+      "Contact resistance shall not exceed 10 milliohms after endurance testing.",
+      "Temperature rise of terminals shall not exceed 45K when carrying rated continuous current."
+    ],
+    "safety": [
+      "Dielectric Strength: Withstand 2000V AC test voltage for 1 minute across open contacts and between live parts and mounting yoke.",
+      "Insulation Resistance: Not less than 5 Megaohms at 500V DC.",
+      "Sparking and arcing shall be completely contained within the arc chamber during inductive load switching.",
+      "Glow-wire flammability test: Insulating parts supporting live contacts must withstand 850°C glow-wire without self-sustaining flame."
+    ],
+    "testing": [
+      "Making and Breaking Capacity Test: 200 operations at 1.1 times rated voltage and 1.25 times rated current.",
+      "Terminal Screws Mechanical Strength Test: Subject terminal screws to torque test (up to 0.8 Nm) without stripping threads.",
+      "Resistance to Heat and Abnormal Fire: Ball pressure test at 125°C to verify non-deformation of insulating base.",
+      "Impact Resistance: Pendulum hammer test delivering 0.5 Joules impact to faceplate without cracking."
+    ],
+    "marking": [
+      "Rated current in Amperes (e.g. 6A, 16A, 20A).",
+      "Rated voltage in Volts (e.g. 250V AC).",
+      "Symbol for AC only (~).",
+      "Manufacturer's trademark, catalogue reference, and ISI certification mark."
+    ],
+    "sampling": [
+      "Type test on batch of 9 switch samples per model.",
+      "Routine test for flashover at 2000V on 100% finished pieces."
+    ],
+    "technical_details": [
+      "Current Ratings: 6A, 10A, 16A, 20A, 32A.",
+      "Voltage Rating: 240V / 250V AC, 50 Hz.",
+      "Switch Patterns: 1-way single pole, 2-way single pole, bell push, double pole (DP) main switch.",
+      "Mounting: Flush modular mounting in wall boxes or surface conduit boxes."
+    ],
+    "related_standards": [
+      {
+        "category": "Related Product Standard",
+        "is_number": "IS 1293",
+        "title": "Plugs and Socket-Outlets of Rated Voltage up to 250V",
+        "official_bis_url": "https://standardsbis.bsbedge.com/Home/Search?StandardNumber=IS+1293",
+        "year_recorded": 2019
+      },
+      {
+        "category": "Installation Standard",
+        "is_number": "IS 732",
+        "title": "Code of Practice for Electrical Wiring Installations",
+        "official_bis_url": "https://standardsbis.bsbedge.com/Home/Search?StandardNumber=IS+732",
+        "year_recorded": 2019
+      },
+      {
+        "category": "Safety Standard",
+        "is_number": "IS 13947-1",
+        "title": "Low-Voltage Switchgear and Controlgear - General Rules",
+        "official_bis_url": "https://standardsbis.bsbedge.com/Home/Search?StandardNumber=IS+13947-1",
+        "year_recorded": 1998
+      }
+    ],
+    "source": "Bureau of Indian Standards (BIS)",
+    "disclaimer": "DEMO DATA — Verify against the authoritative BIS publication.",
+    "official_bis_url": "https://standardsbis.bsbedge.com/Home/Search?StandardNumber=IS+3854",
+    "year_recorded": 1988,
+    "version": "1988 (Second Revision)",
+    "percentages": {
+      "safety": 100,
+      "performance": 96,
+      "testing": 98,
+      "compliance": 100,
+      "reliability": 96
+    },
+    "applicability": "Switches for domestic and similar fixed electrical installations up to 16A, 250V AC.",
+    "status": "Active / Current Standard"
+  },
+  {
+    "id": "std_is_1293",
+    "is_number": "IS 1293",
+    "title": "Plugs and Socket-Outlets of Rated Voltage up to and Including 250 Volts and Rated Current up to and Including 16 Amperes - Specification",
+    "domain": "Electrical & Electronic Products",
+    "product": "Plugs & Sockets",
+    "product_id": "plugs_sockets",
+    "scope": "Applies to plugs and fixed or portable socket-outlets for AC only, with or without earthing contact, with a rated voltage not exceeding 250V and a rated current not exceeding 16A, intended for domestic and similar electrical installations.",
+    "requirements": [
+      "Socket-outlets shall be provided with automatic safety shutters preventing single-pin insertion and protecting children from electrical shock.",
+      "Earthing pin and earth socket contact shall engage first and disengage last during plug insertion and withdrawal.",
+      "Plug pins shall be nickel-plated solid brass with smooth rounded chamfered tips.",
+      "Socket contact clips shall maintain resilient clamping force on plug pins over life cycle."
+    ],
+    "performance": [
+      "Contact retention withdrawal force: Minimum 1.5N per pin and maximum 50N total plug withdrawal force.",
+      "Endurance: Withstand 10,000 insertions and withdrawals at rated voltage and current without contact degradation.",
+      "Temperature rise of terminals and contact sockets shall not exceed 30K when carrying full 16A continuous current."
+    ],
+    "safety": [
+      "Creepage distance across live socket apertures and front faceplate shall be at least 6.0 mm.",
+      "Earth terminal must be securely clamped with independent terminal screw; loose earthing connection is prohibited.",
+      "All non-metallic body mouldings must pass 850°C glow-wire flammability test.",
+      "Dielectric withstand of 2000V AC applied between live and earth contacts for 1 minute."
+    ],
+    "testing": [
+      "Withdrawal Force Gauge Test using hardened ground steel plug pins.",
+      "Tumbling Barrel Drop Test: Plugs tumbled 1000 times in revolving barrel from 0.5m height; no cracked pins or loosened terminals permitted.",
+      "Temperature Rise Test under continuous 16A current with thermocouple monitoring.",
+      "Shutter Safety Probe Test: Rigid 1 mm steel wire probe pushed against shutter at 20N force must not touch live socket contacts."
+    ],
+    "marking": [
+      "Rated current in Amperes (6A or 16A).",
+      "Rated voltage (250V AC).",
+      "Terminal markings: L (Line), N (Neutral), E or Earth symbol (Ground).",
+      "ISI mark with IS 1293 designation permanently molded on body."
+    ],
+    "sampling": [
+      "Type test on 12 samples of plugs and socket-outlets.",
+      "Routine testing of shutter operation and earth bonding on 100% production."
+    ],
+    "technical_details": [
+      "Configurations: 3-pin round pin (Type D: 6A, 3-pin; Type M: 16A, 3-pin).",
+      "Pin Dimensions: 16A Earth pin 8.7 mm diameter, Line/Neutral pins 7.0 mm diameter.",
+      "Material: Virgin flame-retardant Polycarbonate and high-conductivity phosphor bronze contact sleeves.",
+      "Mounting: Flush modular mounting in wall boxes or surface mount."
+    ],
+    "related_standards": [
+      {
+        "category": "Related Product Standard",
+        "is_number": "IS 3854",
+        "title": "Switches for Domestic and Similar Fixed Electrical Installations",
+        "official_bis_url": "https://standardsbis.bsbedge.com/Home/Search?StandardNumber=IS+3854",
+        "year_recorded": 1988
+      },
+      {
+        "category": "Installation Standard",
+        "is_number": "IS 732",
+        "title": "Code of Practice for Electrical Wiring Installations",
+        "official_bis_url": "https://standardsbis.bsbedge.com/Home/Search?StandardNumber=IS+732",
+        "year_recorded": 2019
+      },
+      {
+        "category": "Safety Standard",
+        "is_number": "IS 302-1",
+        "title": "Safety of Household and Similar Electrical Appliances - General Requirements",
+        "official_bis_url": "https://standardsbis.bsbedge.com/Home/Search?StandardNumber=IS+302-1",
+        "year_recorded": 2008
+      }
+    ],
+    "source": "Bureau of Indian Standards (BIS)",
+    "disclaimer": "DEMO DATA — Verify against the authoritative BIS publication.",
+    "official_bis_url": "https://standardsbis.bsbedge.com/Home/Search?StandardNumber=IS+1293",
+    "year_recorded": 2019,
+    "version": "2019 (Fifth Revision)",
+    "percentages": {
+      "safety": 100,
+      "performance": 97,
+      "testing": 99,
+      "compliance": 100,
+      "reliability": 97
+    },
+    "applicability": "Plugs and socket-outlets of rated voltage up to 250V and rated currents of 6A and 16A for household and similar purposes.",
+    "status": "Active / Current Standard"
+  },
+  {
+    "id": "std_is_694",
+    "is_number": "IS 694",
+    "title": "Polyvinyl Chloride (PVC) Insulated Cables for Working Voltages up to and Including 1100 Volts - Specification",
+    "domain": "Electrical & Electronic Products",
+    "product": "Electrical Cables",
+    "product_id": "electrical_cables",
+    "scope": "Specifies requirements for PVC insulated single-core and multi-core cables and flexible cords with copper or aluminium conductors, for electric power and lighting in domestic, commercial, and industrial installations up to 1100V AC.",
+    "requirements": [
+      "Conductors shall consist of electrolytic high-purity annealed bare or tinned copper wire complying with IS 8130 Class 1, Class 2, or Class 5.",
+      "PVC insulation shall be uniform, free from blisters, pinholes, and easily strippable without damage to conductor strands.",
+      "Outer sheath for building wires shall be Flame Retardant (FR) or Flame Retardant Low Smoke (FRLS) grade compound.",
+      "Core identification by color coding: Red, Yellow, Blue for phases; Black for neutral; Green or Green/Yellow for protective earth."
+    ],
+    "performance": [
+      "Conductor DC resistance at 20°C: Maximum 12.10 Ohm/km for 1.5 sq mm; 7.41 Ohm/km for 2.5 sq mm; 4.61 Ohm/km for 4.0 sq mm copper.",
+      "Insulation resistance constant (Ki) shall not be less than 3.6 Megaohm-km at 20°C.",
+      "Continuous current-carrying capacity under conduit installation: 16A for 1.5 sq mm, 22A for 2.5 sq mm, 29A for 4.0 sq mm copper wires.",
+      "Tensile strength of PVC insulation shall not be less than 12.5 N/sq mm with elongation at break of at least 150%."
+    ],
+    "safety": [
+      "Oxygen Index: Minimum 29% for FR/FRLS cables to resist oxygen-fed flame spread.",
+      "Temperature Index: Minimum 250°C for flame retardance.",
+      "Smoke Density: Minimum light transmittance of 60% during burning test for FRLS cables.",
+      "Halogen Acid Gas Emission: Not exceeding 20% by weight for low smoke cables."
+    ],
+    "testing": [
+      "High Voltage Spark Test: Online 100% spark test of insulated core at 6 kV AC before sheathing.",
+      "Flammability Test: Vertical flammability test in accordance with IS 10810 (Part 53); flame shall self-extinguish upon burner removal.",
+      "Hot Deformation Test of PVC compound at 80°C under specified mechanical weight.",
+      "Cold Bend Test at 0°C to verify cable flexibility in winter conditions without cracking."
+    ],
+    "marking": [
+      "Manufacturer's trade name or registered mark embossed or printed on cable sheath at intervals not exceeding 1 meter.",
+      "Rated voltage grade: '1100 V'.",
+      "Conductor material and cross-sectional area: e.g. '1C x 2.5 sq mm Cu'.",
+      "Type of insulation: 'PVC FR' or 'PVC FRLS'.",
+      "Sequential meter length marking and ISI certification emblem with IS 694 designation."
+    ],
+    "sampling": [
+      "Drum-wise sample inspection for conductor resistance and insulation thickness.",
+      "One test sample of 10 meters taken per 50,000 meters manufactured batch for tensile and flammability tests."
+    ],
+    "technical_details": [
+      "Voltage Rating: 1100V Grade.",
+      "Standard Conductor Sizes: 0.5, 0.75, 1.0, 1.5, 2.5, 4.0, 6.0, 10.0, 16.0, 25.0 sq mm.",
+      "Operating Temperature: -15°C to +70°C (standard PVC) or +85°C (heat resistant HR PVC).",
+      "Conductor Compliance: IS 8130 electrolytic grade bare copper (>99.9% purity)."
+    ],
+    "related_standards": [
+      {
+        "category": "Testing Standard",
+        "is_number": "IS 10810",
+        "title": "Methods of Test for Cables",
+        "official_bis_url": "https://standardsbis.bsbedge.com/Home/Search?StandardNumber=IS+10810",
+        "year_recorded": 1984
+      },
+      {
+        "category": "Installation Standard",
+        "is_number": "IS 732",
+        "title": "Code of Practice for Electrical Wiring Installations",
+        "official_bis_url": "https://standardsbis.bsbedge.com/Home/Search?StandardNumber=IS+732",
+        "year_recorded": 2019
+      },
+      {
+        "category": "Product Standard",
+        "is_number": "IS 8130",
+        "title": "Conductors for Insulated Electric Cables and Flexible Cords",
+        "official_bis_url": "https://standardsbis.bsbedge.com/Home/Search?StandardNumber=IS+8130",
+        "year_recorded": 2013
+      }
+    ],
+    "source": "Bureau of Indian Standards (BIS)",
+    "disclaimer": "DEMO DATA — Verify against the authoritative BIS publication.",
+    "official_bis_url": "https://standardsbis.bsbedge.com/Home/Search?StandardNumber=IS+694",
+    "year_recorded": 2010,
+    "version": "2010 (Fourth Revision)",
+    "percentages": {
+      "safety": 100,
+      "performance": 96,
+      "testing": 98,
+      "compliance": 100,
+      "reliability": 95
+    },
+    "applicability": "PVC insulated cables for working voltages up to and including 1100V with copper conductors for building wiring.",
+    "status": "Active / Current Standard"
+  },
+  {
+    "id": "std_is_15111",
+    "is_number": "IS 15111",
+    "title": "Cord Extension Sets and Portable Power Outlets for Household and Similar Purposes - Specification",
+    "domain": "Electrical & Electronic Products",
+    "product": "Extension Boards",
+    "product_id": "extension_boards",
+    "scope": "Covers safety and constructional requirements for cord extension sets, surge suppressors, power strips, and portable multi-outlet extension boards for AC only, having a rated voltage not exceeding 250V and a rated current not exceeding 16A, fitted with flexible cord.",
+    "requirements": [
+      "Cord extension assembly shall incorporate an integrated resettable circuit breaker or fuse preventing electrical overload.",
+      "All socket outlets in the extension board must have child-resistant shutter mechanisms complying with IS 1293.",
+      "Surge protected models must incorporate Metal Oxide Varistors (MOVs) with thermal disconnection protection.",
+      "Enclosure shall be molded from impact-resistant flame-retardant engineering plastic with secure cord anchorage."
+    ],
+    "performance": [
+      "Continuous current load capacity: 6A (1500W) or 16A (3500W) at 240V AC without excessive heat rise.",
+      "Surge absorption rating: Minimum 350 Joules / 10,000 Amperes maximum peak surge current for spike guards.",
+      "Master switch life: Rated for minimum 10,000 operations under full inductive/resistive load."
+    ],
+    "safety": [
+      "Earth continuity between plug grounding pin and all socket grounding sleeves must remain under 0.05 Ohm.",
+      "Cord clamping bracket must withstand 30 pulls of 100N force without moving more than 2 mm.",
+      "Flammability: Plastic housing must satisfy 750°C glow-wire test without dripping flaming particles.",
+      "Clear LED indicators showing 'Power ON' and 'Earth Connected / Protected' status."
+    ],
+    "testing": [
+      "Overload Trip Test: Circuit breaker must trip within 60 seconds when subjected to 1.5 times rated current.",
+      "Dielectric Voltage Test: 2000V AC applied for 60 seconds between conductors and outer case.",
+      "Cord Flexing Test at cable entrance bush: 10,000 cycles under 10N weight.",
+      "Spill Protection: 100 ml of liquid poured over faceplate while energized without earth leakage exceeding 0.5 mA."
+    ],
+    "marking": [
+      "Maximum continuous electrical load in Watts (e.g., 'MAX LOAD 1500W - 6A').",
+      "Rated voltage (250V AC, 50 Hz).",
+      "Surge rating in Joules (where applicable).",
+      "Warning: 'Do not connect high power heating appliances exceeding rating'.",
+      "ISI mark with standard designation IS 15111."
+    ],
+    "sampling": [
+      "Sample batch testing of 6 units per production run for dielectric and thermal trip response."
+    ],
+    "technical_details": [
+      "Cord Lengths: 1.5m, 2.0m, 3.0m, 5.0m.",
+      "Cord Gauge: 3-core 0.75 sq mm (for 6A) or 3-core 1.5 sq mm (for 16A) heavy duty PVC sheathed flexible cord.",
+      "Plug Type: Factory-molded 3-pin plug complying with IS 1293.",
+      "Outlets: 4 to 8 universal/shuttered sockets."
+    ],
+    "related_standards": [
+      {
+        "category": "Related Product Standard",
+        "is_number": "IS 1293",
+        "title": "Plugs and Socket-Outlets of Rated Voltage up to 250V",
+        "official_bis_url": "https://standardsbis.bsbedge.com/Home/Search?StandardNumber=IS+1293",
+        "year_recorded": 2019
+      },
+      {
+        "category": "Safety Standard",
+        "is_number": "IS 302-1",
+        "title": "Safety of Household and Similar Electrical Appliances - General Requirements",
+        "official_bis_url": "https://standardsbis.bsbedge.com/Home/Search?StandardNumber=IS+302-1",
+        "year_recorded": 2008
+      },
+      {
+        "category": "Installation Standard",
+        "is_number": "IS 732",
+        "title": "Code of Practice for Electrical Wiring Installations",
+        "official_bis_url": "https://standardsbis.bsbedge.com/Home/Search?StandardNumber=IS+732",
+        "year_recorded": 2019
+      }
+    ],
+    "source": "Bureau of Indian Standards (BIS)",
+    "disclaimer": "DEMO DATA — Verify against the authoritative BIS publication.",
+    "official_bis_url": "https://standardsbis.bsbedge.com/Home/Search?StandardNumber=IS+15111",
+    "year_recorded": 2002,
+    "version": "2002 (Part 1 & 2)",
+    "percentages": {
+      "safety": 100,
+      "performance": 95,
+      "testing": 98,
+      "compliance": 100,
+      "reliability": 94
+    },
+    "applicability": "Extension cord sets and multiple portable socket-outlets with surge protection for household and commercial use.",
+    "status": "Active / Current Standard"
+  },
+  {
+    "id": "std_is_302_2_21",
+    "is_number": "IS 302-2-21",
+    "title": "Safety of Household and Similar Electrical Appliances - Part 2-21: Particular Requirements for Stationary Electric Storage Water Heaters (Geysers)",
+    "domain": "Electrical & Electronic Products",
+    "product": "Electric Water Heater",
+    "product_id": "water_heater",
+    "scope": "Applies to stationary electric storage water heaters (geysers) intended for heating water below boiling temperature for domestic and similar use, having a rated voltage not exceeding 250V for single-phase appliances and a capacity between 6 litres and 200 litres.",
+    "requirements": [
+      "Inner tank shall be made of corrosion-resistant stainless steel (grade 304/316) or glass-lined vitreous enameled steel.",
+      "Inner container must be fitted with a sacrificial magnesium anode rod to protect against galvanic corrosion.",
+      "Equipped with both an adjustable operational thermostat and an independent non-self-resetting thermal cut-out.",
+      "Safety multifunctional valve comprising pressure relief valve, non-return check valve, and vacuum relief valve."
+    ],
+    "performance": [
+      "Standing loss (thermal energy loss per 24 hours) shall not exceed BEE 5-star limits for specified tank volume.",
+      "Heating efficiency: Water temperature shall rise from 15°C to 65°C within rated duration (approx. 35 mins for 15L at 2000W).",
+      "Tank insulation: High-density CFC-free polyurethane foam (PUF) insulation with minimum thickness of 25 mm."
+    ],
+    "safety": [
+      "Pressure safety: Tank shall withstand hydraulic proof test pressure of at least 1.5 times rated working pressure (minimum 1.2 MPa / 12 bar).",
+      "Thermal cut-out shall disconnect both live and neutral poles if thermostat fails and water reaches 90°C.",
+      "Enclosure ingress protection of at least IPX4 (splash-proof) for installation in bathrooms.",
+      "Earth continuity terminal bonded to tank, heating element flange, and outer casing."
+    ],
+    "testing": [
+      "Hydraulic Pressure Test: Inner tank pressurized to 1.2 MPa (12 bar) for 15 minutes with no leakage or bulging.",
+      "Pressure Cycling Endurance Test: 100,000 cycles of pressure fluctuation between 0 and 0.8 MPa.",
+      "High Voltage Dielectric Test: 1500V AC applied between element terminal and tank for 60 seconds.",
+      "Boil-Dry Protection Test: Element energized in empty tank; thermal cut-out must trip safely without rupture."
+    ],
+    "marking": [
+      "Rated storage capacity in Litres (L).",
+      "Rated power input in Kilowatts (e.g. 2.0 kW, 3.0 kW).",
+      "Maximum rated working pressure in Bar or MPa (e.g., 0.8 MPa / 8 Bar).",
+      "BEE Star Rating energy label, ISI certification mark with IS 302-2-21."
+    ],
+    "sampling": [
+      "Complete type test on 2 production water heaters.",
+      "100% factory hydraulic pressure testing of inner tanks."
+    ],
+    "technical_details": [
+      "Capacity Range: 6L, 10L, 15L, 25L, 35L, 50L.",
+      "Operating Voltage: 230V AC, 50 Hz.",
+      "Power Rating: 2000W - 3000W.",
+      "Rated Pressure: 0.65 MPa to 0.80 MPa (suitable for high-rise buildings)."
+    ],
+    "related_standards": [
+      {
+        "category": "Safety Standard",
+        "is_number": "IS 302-1",
+        "title": "Safety of Household and Similar Electrical Appliances - General Requirements",
+        "official_bis_url": "https://standardsbis.bsbedge.com/Home/Search?StandardNumber=IS+302-1",
+        "year_recorded": 2008
+      },
+      {
+        "category": "Performance Standard",
+        "is_number": "IS 2082",
+        "title": "Stationary Electric Storage Water Heaters for Domestic Use",
+        "official_bis_url": "https://standardsbis.bsbedge.com/Home/Search?StandardNumber=IS+2082",
+        "year_recorded": 1993
+      },
+      {
+        "category": "Testing Standard",
+        "is_number": "IS 9000",
+        "title": "Basic Environmental Testing Procedures for Electronic Items",
+        "official_bis_url": "https://standardsbis.bsbedge.com/Home/Search?StandardNumber=IS+9000",
+        "year_recorded": 1988
+      }
+    ],
+    "source": "Bureau of Indian Standards (BIS)",
+    "disclaimer": "DEMO DATA — Verify against the authoritative BIS publication.",
+    "official_bis_url": "https://standardsbis.bsbedge.com/Home/Search?StandardNumber=IS+302-2-21",
+    "year_recorded": 2018,
+    "version": "2018 (Second Revision)",
+    "percentages": {
+      "safety": 100,
+      "performance": 97,
+      "testing": 99,
+      "compliance": 100,
+      "reliability": 96
+    },
+    "applicability": "Stationary electric storage water heaters and geysers for domestic and commercial sanitary water heating.",
+    "status": "Active / Current Standard"
+  },
+  {
+    "id": "std_is_302_2_25",
+    "is_number": "IS 302-2-25",
+    "title": "Safety of Household and Similar Electrical Appliances - Part 2-25: Particular Requirements for Microwave Ovens, Including Combination Microwave Ovens",
+    "domain": "Electrical & Electronic Products",
+    "product": "Microwave Oven",
+    "product_id": "microwave_oven",
+    "scope": "Applies to the safety of microwave ovens for household use, their rated voltage being not more than 250V AC single-phase. It also covers combination microwave ovens fitted with grill and convection heating elements.",
+    "requirements": [
+      "Oven door shall be equipped with a minimum of two independent safety interlocks preventing microwave generation when door is unlatched.",
+      "Microwave energy leakage at any point 50 mm from exterior surface shall not exceed 50 W/sq m (5 mW/sq cm).",
+      "Cavity interior shall have smooth non-absorbent ceramic or epoxy enamel finish resistant to grease and high temperatures.",
+      "Cooling blower shall operate continuously while magnetron is energized."
+    ],
+    "performance": [
+      "Microwave heating efficiency: Water heating test method per IEC 60705 measuring delivered RF output wattage.",
+      "Uniformity of heating: Standard egg/dough heating test to verify turntable rotation coverage.",
+      "Convection oven temperature stability within ±10°C of setpoint across 100°C to 230°C."
+    ],
+    "safety": [
+      "Door Interlock Monitoring: Failure of one interlock switch must blow protective circuit fuse before microwave leakage can occur.",
+      "Radiation Leakage Monitor: Tested before and after 100,000 door open/close cycles.",
+      "Child safety lock function locking the keypad during standby.",
+      "Thermal limiter on magnetron shell cutting power if cooling air duct is blocked."
+    ],
+    "testing": [
+      "Door Slam Endurance Test: 100,000 door opening and slamming operations followed by microwave leakage check.",
+      "Microwave Leakage Survey using calibrated electromagnetic radiation probe around door perimeter.",
+      "Dielectric High Voltage Withstand: 2000V AC between high voltage transformer primary and chassis.",
+      "Cavity Pressure Relief Test: Explosion-proof venting test in event of sealed container rupture."
+    ],
+    "marking": [
+      "Microwave RF output power in Watts (e.g., 800W, 900W).",
+      "Rated electrical power consumption in Watts (RF + Grill + Convection).",
+      "Microwave frequency: 2450 MHz ± 50 MHz.",
+      "Warning label: 'MICROWAVE ENERGY - DO NOT OPERATE WITH DOOR OPEN'.",
+      "ISI mark with IS 302-2-25 designation."
+    ],
+    "sampling": [
+      "Type test on 2 production microwave ovens.",
+      "100% factory RF microwave radiation leakage testing on finished appliances."
+    ],
+    "technical_details": [
+      "Operating Frequency: 2450 MHz ISM Band.",
+      "RF Output Power: 700W to 1100W.",
+      "Cavity Volume: 20 Litres to 34 Litres.",
+      "Operating Voltage: 230V AC, 50 Hz."
+    ],
+    "related_standards": [
+      {
+        "category": "Safety Standard",
+        "is_number": "IS 302-1",
+        "title": "Safety of Household and Similar Electrical Appliances - General Requirements",
+        "official_bis_url": "https://standardsbis.bsbedge.com/Home/Search?StandardNumber=IS+302-1",
+        "year_recorded": 2008
+      },
+      {
+        "category": "Testing Standard",
+        "is_number": "IS 11674",
+        "title": "Methods of Measurement of Performance of Microwave Ovens for Household and Similar Use",
+        "official_bis_url": "https://standardsbis.bsbedge.com/Home/Search?StandardNumber=IS+11674",
+        "year_recorded": 2015
+      },
+      {
+        "category": "Testing Standard",
+        "is_number": "IS 9000",
+        "title": "Basic Environmental Testing Procedures for Electronic Items",
+        "official_bis_url": "https://standardsbis.bsbedge.com/Home/Search?StandardNumber=IS+9000",
+        "year_recorded": 1988
+      }
+    ],
+    "source": "Bureau of Indian Standards (BIS)",
+    "disclaimer": "DEMO DATA — Verify against the authoritative BIS publication.",
+    "official_bis_url": "https://standardsbis.bsbedge.com/Home/Search?StandardNumber=IS+302-2-25",
+    "year_recorded": 2014,
+    "version": "2014 (Second Edition)",
+    "percentages": {
+      "safety": 100,
+      "performance": 96,
+      "testing": 98,
+      "compliance": 100,
+      "reliability": 95
+    },
+    "applicability": "Microwave ovens for domestic and commercial cooking, defrosting, and heating applications.",
+    "status": "Active / Current Standard"
+  },
+  {
+    "id": "std_is_302_1",
+    "is_number": "IS 302-1",
+    "title": "Safety of Household and Similar Electrical Appliances - Part 1: General Requirements",
+    "domain": "Electrical & Electronic Products",
+    "product": "Domestic Appliances",
+    "product_id": "domestic_appliances",
+    "scope": "Deals with the general safety of electrical appliances for household and similar purposes, their rated voltage being not more than 250V for single-phase appliances and 480V for other appliances. It forms the master base safety standard for all individual Part 2 appliance standards.",
+    "requirements": [
+      "Appliances shall be constructed so that they function safely and cause no danger to persons or surroundings, even in the event of carelessness.",
+      "Protection against access to live parts with standard test finger (probe B per IS 1401).",
+      "Adequate mechanical strength against impact, dropping, and vibration under normal usage.",
+      "Reliable earthing terminal with corrosion-resistant screws and lock washers."
+    ],
+    "performance": [
+      "Temperature rise limits for various insulation materials (Class A, E, B, F, H).",
+      "Starting and running current performance under 0.85 and 1.10 times rated voltage.",
+      "Stability on 10-degree and 15-degree inclined planes."
+    ],
+    "safety": [
+      "Clearance and creepage distances according to working voltage and pollution degree.",
+      "Leakage current under operating condition: Max 0.75 mA for Class I portable, 3.5 mA for Class I stationary appliances.",
+      "Moisture resistance test under 93% relative humidity for 48 hours.",
+      "Resistance to fire and tracking (glow-wire test at 650°C/850°C and needle-flame test)."
+    ],
+    "testing": [
+      "High Voltage Dielectric Withstand Test: 1000V + 2 x Rated Voltage (minimum 1250V AC) for 60 seconds.",
+      "Impact test with spring hammer delivering 0.5 Joule impact.",
+      "Cord Anchorage pull and torque test.",
+      "Abnormal operation and locked rotor test."
+    ],
+    "marking": [
+      "Rated voltage or voltage range.",
+      "Rated input power in Watts or rated current in Amperes.",
+      "Manufacturer's name or registered trademark.",
+      "Model or type reference.",
+      "Symbol for Class II appliances where applicable.",
+      "ISI mark with IS 302-1 designation."
+    ],
+    "sampling": [
+      "Type test protocol for certification granting.",
+      "Routine verification of insulation resistance and earth continuity on 100% production line."
+    ],
+    "technical_details": [
+      "Appliance Classification: Class 0, Class 0I, Class I, Class II, Class III.",
+      "Ingress Protection Codes: IPX0 through IPX8 according to IS 12063.",
+      "Overvoltage Category II for household appliances."
+    ],
+    "related_standards": [
+      {
+        "category": "Testing Standard",
+        "is_number": "IS 9000",
+        "title": "Basic Environmental Testing Procedures for Electronic Items",
+        "official_bis_url": "https://standardsbis.bsbedge.com/Home/Search?StandardNumber=IS+9000",
+        "year_recorded": 1988
+      },
+      {
+        "category": "Installation Standard",
+        "is_number": "IS 732",
+        "title": "Code of Practice for Electrical Wiring Installations",
+        "official_bis_url": "https://standardsbis.bsbedge.com/Home/Search?StandardNumber=IS+732",
+        "year_recorded": 2019
+      }
+    ],
+    "source": "Bureau of Indian Standards (BIS)",
+    "disclaimer": "DEMO DATA — Verify against the authoritative BIS publication.",
+    "official_bis_url": "https://standardsbis.bsbedge.com/Home/Search?StandardNumber=IS+302-1",
+    "year_recorded": 2008,
+    "version": "2008 (Sixth Edition)",
+    "percentages": {
+      "safety": 100,
+      "performance": 96,
+      "testing": 99,
+      "compliance": 100,
+      "reliability": 96
+    },
+    "applicability": "General safety requirements for household and similar electrical appliances not exceeding 250V single-phase.",
+    "status": "Active / Current Standard"
+  },
+  {
+    "id": "demo_std_custom_solar",
+    "is_number": "IS DEMO-9999",
+    "title": "Safety Specifications for Experimental Solar Cookers (Demo Test Record)",
+    "domain": "Electrical & Electronic Products",
+    "product": "Experimental Appliance",
+    "product_id": "demo_appliance",
+    "scope": "Prototype demonstration standard for experimental liquid heating apparatus not yet formally gazetted by BIS.",
+    "requirements": [
+      "Prototype demonstration requirement for testing and validation."
+    ],
+    "performance": [
+      "Energy conversion test benchmark for prototype trials."
+    ],
+    "safety": [
+      "Thermal fuse cutoff test demonstration."
+    ],
+    "testing": [
+      "Prototype voltage withstand test."
+    ],
+    "marking": [
+      "Marked with Demo Indicator."
+    ],
+    "sampling": [
+      "Inspection based on prototype batch."
+    ],
+    "technical_details": [
+      "Rating: 230V AC prototype."
+    ],
+    "related_standards": [
+      {
+        "category": "Safety Standard",
+        "is_number": "IS 302-1",
+        "title": "Safety of Household and Similar Electrical Appliances - General Requirements",
+        "official_bis_url": "https://standardsbis.bsbedge.com/Home/Search?StandardNumber=IS+302-1",
+        "year_recorded": 2008
+      },
+      {
+        "category": "Testing Standard",
+        "is_number": "IS DEMO-TEST",
+        "title": "Experimental Thermal Test Procedure (Demo Reference)",
+        "official_bis_url": null,
+        "year_recorded": 2015
+      }
+    ],
+    "source": "Demo Dataset",
+    "official_bis_url": null,
+    "disclaimer": "DEMO DATA — Verify against the authoritative BIS publication.",
+    "year_recorded": 2023,
+    "version": "2023 (Provisional Draft)",
+    "percentages": {
+      "safety": 100,
+      "performance": 92,
+      "testing": 95,
+      "compliance": 100,
+      "reliability": 90
+    },
+    "applicability": "Experimental and specialized renewable energy electrical appliances and solar converters.",
+    "status": "Active / Current Standard"
+  }
+]

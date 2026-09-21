@@ -1,0 +1,1370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="BISENSE - AI-powered multilingual semantic discovery and recommendation system for Indian Standards in Electrical & Electronic Products.">
+  <title>BISENSE | Understand Requirements. Discover the Right Indian Standards.</title>
+  
+  <!-- Inter & JetBrains Mono Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  
+  <!-- Application Stylesheet -->
+  <link rel="stylesheet" href="/static/css/style.css">
+  
+  <!-- Three.js CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body class="light-theme">
+
+  <!-- ========================================================
+       TOP FIXED NAVIGATION
+       ======================================================== -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-brand" aria-label="BISENSE Home">
+        <div class="brand-logo-icon">
+          <span class="logo-core"></span>
+          <span class="logo-orbit"></span>
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">BISENSE</span>
+          <span class="brand-badge">SIH PROTOTYPE</span>
+        </div>
+      </a>
+
+      <nav class="nav-menu" id="navMenu">
+        <a href="#hero" class="nav-link active" data-i18n="nav_home">Home</a>
+        <a href="#problem" class="nav-link" data-i18n="nav_problem">Problem</a>
+        <a href="#solution" class="nav-link" data-i18n="nav_solution">Solution</a>
+        <a href="#how-it-works" class="nav-link" data-i18n="nav_how">How It Works</a>
+        <a href="#products" class="nav-link" data-i18n="nav_products">Products</a>
+        <a href="#demo" class="nav-link highlight" data-i18n="nav_demo">Demo</a>
+        <a href="#architecture" class="nav-link" data-i18n="nav_arch">Architecture</a>
+      </nav>
+
+      <div class="nav-actions">
+        <div class="nav-lang-picker">
+          <select id="navLanguageSelect" class="nav-lang-select" aria-label="Select Interface Language">
+            <option value="en">🇬🇧 English</option>
+            <option value="hi">🇮🇳 हिन्दी (Hindi)</option>
+            <option value="te">🇮🇳 తెలుగు (Telugu)</option>
+            <option value="ta">🇮🇳 தமிழ் (Tamil)</option>
+            <option value="kn">🇮🇳 ಕನ್ನಡ (Kannada)</option>
+            <option value="ml">🇮🇳 മലയാളം (Malayalam)</option>
+            <option value="mr">🇮🇳 मराठी (Marathi)</option>
+            <option value="bn">🇮🇳 বাংলা (Bengali)</option>
+            <option value="gu">🇮🇳 ગુજરાતી (Gujarati)</option>
+            <option value="pa">🇮🇳 ਪੰਜਾਬੀ (Punjabi)</option>
+          </select>
+        </div>
+        <a href="#demo" class="btn btn-primary btn-sm glow-btn">
+          <span class="btn-icon">⚡</span>
+          <span data-i18n="nav_launch">Launch Demo</span>
+        </a>
+        <button class="mobile-toggle" id="mobileMenuBtn" aria-label="Toggle Navigation">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========================================================
+       HERO SECTION WITH 3D AI ENGINE
+       ======================================================== -->
+  <section class="hero-section" id="hero">
+    <div class="hero-canvas-container" id="heroCanvasContainer">
+      <canvas id="heroCanvas"></canvas>
+      <div class="hero-canvas-overlay"></div>
+    </div>
+
+    <!-- 3D Node Tooltip / HUD -->
+    <div class="scene-hud" id="heroHud" style="display: none;">
+      <div class="hud-header">
+        <span class="hud-tag" id="hudTag">NODE</span>
+        <button class="hud-close" id="hudClose" aria-label="Close tooltip">&times;</button>
+      </div>
+      <div class="hud-title" id="hudTitle">BISENSE AI Core</div>
+      <div class="hud-desc" id="hudDesc">Multilingual Semantic Processing Engine</div>
+    </div>
+
+    <div class="hero-content">
+      <div class="container">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          <span data-i18n="hero_badge">AI-Powered • Multilingual • Semantic Search</span>
+        </div>
+
+        <h1 class="hero-title">
+          <span data-i18n="hero_title_1">Understand Requirements.</span><br>
+          <span class="gradient-text" data-i18n="hero_title_2">Discover the Right Indian Standards.</span>
+        </h1>
+
+        <p class="hero-subtitle" data-i18n="hero_subtitle">
+          AI-powered multilingual semantic search for Indian Standards (IS) across
+          electrical and electronic products. Transform natural-language specifications
+          into precise, explainable standards recommendations.
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="#demo" class="btn btn-primary btn-lg glow-btn">
+            <span class="btn-icon">🔍</span>
+            <span data-i18n="hero_btn_try">Try BISENSE</span>
+          </a>
+          <a href="#how-it-works" class="btn btn-secondary btn-lg">
+            <span class="btn-icon">⚙️</span>
+            <span data-i18n="hero_btn_explore">Explore How It Works</span>
+          </a>
+        </div>
+
+        <div class="hero-meta-bar">
+          <div class="meta-item">
+            <span class="meta-label" data-i18n="hero_domain_label">Domain Scope</span>
+            <span class="meta-val text-cyan" data-i18n="hero_domain_val">Electrical & Electronic Products</span>
+          </div>
+          <div class="meta-divider"></div>
+          <div class="meta-item">
+            <span class="meta-label" data-i18n="hero_lang_label">Languages Supported</span>
+            <span class="meta-val" data-i18n="hero_lang_val">10 Regional + English</span>
+          </div>
+          <div class="meta-divider"></div>
+          <div class="meta-item">
+            <span class="meta-label" data-i18n="hero_search_label">Search Technology</span>
+            <span class="meta-val" data-i18n="hero_search_val">FAISS Multi-Chunk Vectors</span>
+          </div>
+        </div>
+
+        <div class="hero-hint">
+          <span>💡 <em data-i18n="hero_hint">Drag or hover on the 3D Engine above to inspect active AI nodes, product models, and IS document streams.</em></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       PROBLEM SECTION
+       ======================================================== -->
+  <section class="section problem-section" id="problem">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag" data-i18n="prob_tag">PROCUREMENT CHALLENGES</span>
+        <h2 class="section-title" data-i18n="prob_title">Finding the Right Standard Can Be Difficult</h2>
+        <p class="section-subtitle" data-i18n="prob_subtitle">
+          A procurement officer or design engineer may clearly understand product requirements
+          and physical parameters, but navigating thousands of official Indian Standards (IS)
+          without knowing the exact standard number is time-consuming and error-prone.
+        </p>
+      </div>
+
+      <div class="grid grid-3 problem-grid">
+        <div class="card glass-card problem-card" data-tilt>
+          <div class="card-icon-wrapper cyan">
+            <span class="card-icon">🔎</span>
+          </div>
+          <h3 class="card-title" data-i18n="prob_c1_title">Search Complexity</h3>
+          <p class="card-text" data-i18n="prob_c1_desc">
+            Official standards repositories often rely on rigid keyword matches or exact IS numbers.
+            Procurement teams must manually sift through volumes of documentation just to find a starting candidate.
+          </p>
+          <div class="card-stat">
+            <span class="stat-highlight">Manual Sifting</span>
+            <span class="stat-desc">Slows technical tenders</span>
+          </div>
+        </div>
+
+        <div class="card glass-card problem-card" data-tilt>
+          <div class="card-icon-wrapper blue">
+            <span class="card-icon">⚙️</span>
+          </div>
+          <h3 class="card-title" data-i18n="prob_c2_title">Requirement Matching</h3>
+          <p class="card-text" data-i18n="prob_c2_desc">
+            Real procurement requests specify power, voltage, application, and safety features.
+            Matching these specifications against the legal scope and normative clauses of a standard requires expert knowledge.
+          </p>
+          <div class="card-stat">
+            <span class="stat-highlight">Semantic Gap</span>
+            <span class="stat-desc">Text variations miss relevant IS</span>
+          </div>
+        </div>
+
+        <div class="card glass-card problem-card" data-tilt>
+          <div class="card-icon-wrapper purple">
+            <span class="card-icon">📋</span>
+          </div>
+          <h3 class="card-title" data-i18n="prob_c3_title">Standards Understanding</h3>
+          <p class="card-text" data-i18n="prob_c3_desc">
+            A single product involves complex cross-cutting specifications: dielectric testing,
+            thermal cut-offs, insulation resistance, ISI marking, and related safety codes.
+          </p>
+          <div class="card-stat">
+            <span class="stat-highlight">Fragmented Info</span>
+            <span class="stat-desc">Crucial clauses overlooked</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       SOLUTION SECTION (MEET BISENSE)
+       ======================================================== -->
+  <section class="section solution-section" id="solution">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag" data-i18n="sol_tag">AI-POWERED INTELLIGENCE</span>
+        <h2 class="section-title" data-i18n="sol_title">Meet BISENSE</h2>
+        <p class="section-subtitle" data-i18n="sol_subtitle">
+          BISENSE converts a natural-language product requirement into a structured search
+          and uses multilingual semantic AI to discover, rank, and explain potentially relevant standards.
+        </p>
+      </div>
+
+      <!-- 7-Stage Interactive Pipeline -->
+      <div class="pipeline-container">
+        <div class="pipeline-track"></div>
+        <div class="pipeline-steps">
+          <div class="step-card" data-step="1">
+            <div class="step-num">01</div>
+            <div class="step-dot"></div>
+            <h4 class="step-title">Natural Language</h4>
+            <p class="step-desc">Accepts free-form requirements in English or 10 Indian regional languages.</p>
+          </div>
+
+          <div class="step-card" data-step="2">
+            <div class="step-num">02</div>
+            <div class="step-dot"></div>
+            <h4 class="step-title">Language Detection</h4>
+            <p class="step-desc">Automatic script identification and linguistic normalization.</p>
+          </div>
+
+          <div class="step-card" data-step="3">
+            <div class="step-num">03</div>
+            <div class="step-dot"></div>
+            <h4 class="step-title">NLP Understanding</h4>
+            <p class="step-desc">Extracts product type, power rating, application, and safety features.</p>
+          </div>
+
+          <div class="step-card" data-step="4">
+            <div class="step-num">04</div>
+            <div class="step-dot"></div>
+            <h4 class="step-title">Multilingual Embedding</h4>
+            <p class="step-desc">Transforms query into dense 384-dimensional semantic concept vector.</p>
+          </div>
+
+          <div class="step-card" data-step="5">
+            <div class="step-num">05</div>
+            <div class="step-dot"></div>
+            <h4 class="step-title">FAISS Semantic Search</h4>
+            <p class="step-desc">Cosine similarity search across multi-chunk standard sections.</p>
+          </div>
+
+          <div class="step-card" data-step="6">
+            <div class="step-num">06</div>
+            <div class="step-dot"></div>
+            <h4 class="step-title">Relevance Ranking</h4>
+            <p class="step-desc">Aggregates multi-section hits and scores candidate standards.</p>
+          </div>
+
+          <div class="step-card" data-step="7">
+            <div class="step-num">07</div>
+            <div class="step-dot"></div>
+            <h4 class="step-title">Explainable Results</h4>
+            <p class="step-desc">Presents "Why this result?" breakdown with full clause provisions.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       HOW IT WORKS SECTION
+       ======================================================== -->
+  <!-- ========================================================
+       HOW IT WORKS SECTION (SIMPLIFIED & INTUITIVE)
+       ======================================================== -->
+  <section class="section how-it-works-section" id="how-it-works">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="domain-pill how-pill">
+          <span class="pill-dot"></span>
+          <span data-i18n="how_tag">HOW IT WORKS • 4 SIMPLE STEPS</span>
+        </div>
+        <h2 class="section-title" data-i18n="how_title">From Everyday Words to the Exact Indian Standard</h2>
+        <p class="section-subtitle" data-i18n="how_subtitle">
+          Finding the right standard used to take hours of manual searching. With BISENSE, simply describe what you need in plain words — AI does the heavy lifting in seconds.
+        </p>
+      </div>
+
+      <!-- 1. The 4 Simple Steps Grid -->
+      <div class="how-steps-grid">
+        <div class="how-step-card glass-card" data-step="1">
+          <div class="step-card-header">
+            <span class="step-badge-num">01</span>
+            <span class="step-icon-emoji">💬</span>
+          </div>
+          <div class="step-badge-sub">STEP 1 • PLAIN WORDS</div>
+          <h3 class="step-card-title">Say What You Need</h3>
+          <p class="step-card-desc">
+            Type or speak like you're talking to an engineer. No IS numbers or legal jargon needed. Supports <strong>English + 10 Indian languages</strong> (Hindi, Tamil, Telugu, etc.).
+          </p>
+          <div class="step-example-pill">
+            <span class="pill-tag">User Query</span>
+            <span class="pill-text">"2000W geyser for home with auto cut-off"</span>
+          </div>
+        </div>
+
+        <div class="how-step-card glass-card" data-step="2">
+          <div class="step-card-header">
+            <span class="step-badge-num">02</span>
+            <span class="step-icon-emoji">🧠</span>
+          </div>
+          <div class="step-badge-sub">STEP 2 • AI PARSING</div>
+          <h3 class="step-card-title">AI Extracts What Matters</h3>
+          <p class="step-card-desc">
+            BISENSE reads between the lines to instantly detect the product type, wattage, domestic vs commercial use, and essential safety features like thermal protection.
+          </p>
+          <div class="step-example-pill">
+            <span class="pill-tag">AI Extracted</span>
+            <span class="pill-text">Geyser • 2000W • Domestic • Cut-Off</span>
+          </div>
+        </div>
+
+        <div class="how-step-card glass-card" data-step="3">
+          <div class="step-card-header">
+            <span class="step-badge-num">03</span>
+            <span class="step-icon-emoji">🔍</span>
+          </div>
+          <div class="step-badge-sub">STEP 3 • DEEP SEARCH</div>
+          <h3 class="step-card-title">Searches Deep Inside Clauses</h3>
+          <p class="step-card-desc">
+            Unlike keyword search that only checks titles, BISENSE searches <em>inside</em> the standard — matching your specs against exact safety, performance, and testing sections.
+          </p>
+          <div class="step-example-pill">
+            <span class="pill-tag">Matched Clauses</span>
+            <span class="pill-text">Clause 19 (Thermal) & Clause 13 (Safety)</span>
+          </div>
+        </div>
+
+        <div class="how-step-card glass-card" data-step="4">
+          <div class="step-card-header">
+            <span class="step-badge-num">04</span>
+            <span class="step-icon-emoji">🎯</span>
+          </div>
+          <div class="step-badge-sub">STEP 4 • CLEAR RESULTS</div>
+          <h3 class="step-card-title">Verified Standard & Why</h3>
+          <p class="step-card-desc">
+            Get the official Indian Standard (IS Code), mandatory clauses to cite in tenders or manufacturing, and an explainable breakdown of <em>why</em> it is the right match.
+          </p>
+          <div class="step-example-pill result-pill">
+            <span class="pill-tag">Verified Match</span>
+            <span class="pill-text">IS 2082:2018 (High 94% Match)</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2. Interactive "Live Flow Visualizer" (See It In Action) -->
+      <div class="how-interactive-container glass-card">
+        <div class="interactive-topbar">
+          <div class="interactive-title-group">
+            <span class="interactive-badge">INTERACTIVE SIMULATION</span>
+            <h3 class="interactive-heading">See How BISENSE Works in Real Time</h3>
+            <p class="interactive-sub">Select an everyday product below to watch how plain words convert into verified Indian Standards:</p>
+          </div>
+          <div class="interactive-tabs" id="howFlowTabs">
+            <button type="button" class="flow-tab-btn active" data-flow="cooker">🍲 Electric Cooker</button>
+            <button type="button" class="flow-tab-btn" data-flow="geyser">🚿 Water Heater</button>
+            <button type="button" class="flow-tab-btn" data-flow="fan">💨 BLDC Ceiling Fan</button>
+            <button type="button" class="flow-tab-btn" data-flow="fridge">❄️ Refrigerator</button>
+          </div>
+        </div>
+
+        <div class="flow-showcase" id="flowShowcase">
+          <!-- Dynamically populated via JS, with initial HTML fallback for instant rendering -->
+          <div class="flow-step-box box-input">
+            <div class="box-label"><span class="box-dot dot-blue"></span> 1. What You Say (Plain Language)</div>
+            <div class="flow-input-bubble" id="flowInputQuery">
+              "I need a 2000W electric cooker for domestic kitchen use with automatic temperature shut-off"
+            </div>
+            <div class="flow-lang-tag" id="flowInputLang">Language: English (or Hindi, Telugu, Tamil, etc.)</div>
+          </div>
+
+          <div class="flow-arrow-divider">➔</div>
+
+          <div class="flow-step-box box-ai">
+            <div class="box-label"><span class="box-dot dot-cyan"></span> 2. What AI Understands</div>
+            <div class="flow-tags-grid" id="flowAiTags">
+              <span class="flow-spec-tag"><strong>Product:</strong> Electric Cooker</span>
+              <span class="flow-spec-tag"><strong>Rating:</strong> 2000W</span>
+              <span class="flow-spec-tag"><strong>Application:</strong> Domestic</span>
+              <span class="flow-spec-tag"><strong>Safety:</strong> Auto Cut-off</span>
+            </div>
+          </div>
+
+          <div class="flow-arrow-divider">➔</div>
+
+          <div class="flow-step-box box-match">
+            <div class="box-label"><span class="box-dot dot-purple"></span> 3. Specific Clauses Matched</div>
+            <div class="flow-clauses-list" id="flowClausesList">
+              <div class="flow-clause-item"><span class="cl-icon">🛡️</span> Clause 19: Abnormal Operation & Thermal Cut-off</div>
+              <div class="flow-clause-item"><span class="cl-icon">⚡</span> Clause 10: Power Input & Current Limits</div>
+              <div class="flow-clause-item"><span class="cl-icon">🔬</span> Clause 13: High-Voltage Leakage Current</div>
+            </div>
+          </div>
+
+          <div class="flow-arrow-divider">➔</div>
+
+          <div class="flow-step-box box-output">
+            <div class="box-label"><span class="box-dot dot-green"></span> 4. Verified Standard Result</div>
+            <div class="flow-result-card" id="flowResultCard">
+              <div class="res-code-row">
+                <span class="res-is-badge">IS 302-2-15</span>
+                <span class="res-score-badge">96% High Match</span>
+              </div>
+              <div class="res-std-title">Safety of Household Electrical Appliances - Particular Requirements for Electric Cookers</div>
+              <button type="button" class="btn btn-primary btn-sm flow-try-btn" id="flowTryBtn">
+                <span>🚀 Try This in Live Search</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3. Comparison & Inside an Indian Standard in 2 Columns -->
+      <div class="grid grid-2 how-extras-grid">
+        <!-- Comparison Card -->
+        <div class="comparison-card glass-card">
+          <div class="card-badge-row">
+            <span class="badge badge-blue">WHY BISENSE IS DIFFERENT</span>
+          </div>
+          <h3 class="comparison-title">Old Way vs. BISENSE Way</h3>
+          <p class="comparison-subtitle">Why traditional search frustrates buyers, and how semantic AI solves it:</p>
+
+          <div class="compare-columns">
+            <div class="compare-col compare-old">
+              <div class="col-head"><span class="cross-icon">❌</span> Traditional Search</div>
+              <ul class="compare-list">
+                <li><strong>Must know IS codes</strong> in advance (e.g. searching "IS 302-2-15").</li>
+                <li><strong>Keyword mismatch:</strong> Searching "auto shut-off" misses standards that write "thermal cut-off".</li>
+                <li><strong>PDF overload:</strong> Gives you 80-page PDFs with zero guidance on where to look.</li>
+                <li><strong>English-only:</strong> Cannot process queries from state tenders in regional languages.</li>
+              </ul>
+            </div>
+
+            <div class="compare-col compare-new">
+              <div class="col-head"><span class="check-icon">✨</span> BISENSE AI</div>
+              <ul class="compare-list">
+                <li><strong>Zero code knowledge needed:</strong> Describe what you need in everyday language.</li>
+                <li><strong>Deep semantic understanding:</strong> Knows that "auto cut-off" maps directly to safety clauses.</li>
+                <li><strong>Pins exact clauses:</strong> Gives you the standard number, key clauses, and test specs.</li>
+                <li><strong>10 Indian Languages:</strong> Fully handles Hindi, Tamil, Telugu, Marathi, and more.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Inside an Indian Standard Guide -->
+        <div class="chunk-explanation-card glass-card">
+          <div class="card-badge-row">
+            <span class="badge badge-cyan">Inside an Indian Standard</span>
+          </div>
+          <h3 class="chunk-exp-title">How an Indian Standard is Structured</h3>
+          <p class="chunk-exp-text">
+            Every Indian Standard (IS) contains hundreds of critical rules. BISENSE organizes each standard into <strong>6 key categories</strong> so you can instantly verify what you need:
+          </p>
+
+          <div class="standard-chunks-simplified">
+            <div class="chunk-simple-item">
+              <div class="chunk-icon-wrap bg-blue-subtle">🎯</div>
+              <div class="chunk-info">
+                <strong>Scope & Purpose</strong>
+                <span>Which exact products, ratings, and usage environments are legally covered.</span>
+              </div>
+            </div>
+
+            <div class="chunk-simple-item">
+              <div class="chunk-icon-wrap bg-cyan-subtle">🛡️</div>
+              <div class="chunk-info">
+                <strong>Safety Requirements</strong>
+                <span>Protection against electric shock, extreme heat, fire hazard, and child safety.</span>
+              </div>
+            </div>
+
+            <div class="chunk-simple-item">
+              <div class="chunk-icon-wrap bg-purple-subtle">⚡</div>
+              <div class="chunk-info">
+                <strong>Performance & Power</strong>
+                <span>Rated wattage, energy efficiency limits, mechanical endurance, and durability.</span>
+              </div>
+            </div>
+
+            <div class="chunk-simple-item">
+              <div class="chunk-icon-wrap bg-green-subtle">🔬</div>
+              <div class="chunk-info">
+                <strong>Testing & Inspection</strong>
+                <span>Mandatory lab procedures: high voltage withstand, insulation, and moisture tests.</span>
+              </div>
+            </div>
+
+            <div class="chunk-simple-item">
+              <div class="chunk-icon-wrap bg-orange-subtle">🏷️</div>
+              <div class="chunk-info">
+                <strong>ISI Marking & Labelling</strong>
+                <span>Mandatory manufacturer nameplate, batch numbering, and BIS certification emblem.</span>
+              </div>
+            </div>
+
+            <div class="chunk-simple-item">
+              <div class="chunk-icon-wrap bg-indigo-subtle">📊</div>
+              <div class="chunk-info">
+                <strong>Sampling & Compliance</strong>
+                <span>Official acceptance criteria and factory inspection sampling plans.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================
+       PRODUCTS SECTION (ELECTRICAL & ELECTRONIC PRODUCTS)
+       ======================================================== -->
+  <section class="section products-section" id="products">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="domain-pill">
+          <span class="pill-dot"></span>
+          <span data-i18n="prod_domain_pill">FOCUSED DOMAIN: ELECTRICAL & ELECTRONIC PRODUCTS</span>
+        </div>
+        <h2 class="section-title" data-i18n="prod_title">Explore Covered Products</h2>
+        <p class="section-subtitle" data-i18n="prod_subtitle">
+          BISENSE is deeply specialized in electrical and electronic appliances.
+          Click any product to preselect it in the search engine and inspect its applicable standards.
+        </p>
+      </div>
+
+      <div class="products-grid" id="productsGrid">
+        <!-- Dynamically injected via API or fallback list -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       MAIN AI SEARCH DEMO SECTION
+       ======================================================== -->
+  <section class="section demo-section" id="demo">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag glow-tag" data-i18n="demo_tag">LIVE PROTOTYPE</span>
+        <h2 class="section-title" data-i18n="demo_title">Find Potentially Relevant Standards</h2>
+        <p class="section-subtitle" data-i18n="demo_subtitle">
+          Describe what you need in plain English or your preferred regional language.
+          BISENSE will extract requirements, search the vector space, and explain the applicable standards.
+        </p>
+      </div>
+
+      <!-- Main Search Panel Card -->
+      <div class="search-panel glass-card">
+        <form id="searchForm" class="search-form">
+          
+          <!-- Top Row Controls -->
+          <div class="form-row-top">
+            <!-- Domain Field (Locked) -->
+            <div class="form-group domain-group">
+              <label for="domainSelect" class="form-label" data-i18n="demo_domain_label">Domain Scope</label>
+              <div class="input-lock-wrapper">
+                <span class="input-icon">⚡</span>
+                <input type="text" id="domainSelect" class="form-input locked" value="Electrical & Electronic Products" readonly>
+                <span class="lock-tag">FOCUSED DOMAIN</span>
+              </div>
+            </div>
+
+            <!-- Language Dropdown -->
+            <div class="form-group lang-group">
+              <label for="languageSelect" class="form-label" data-i18n="demo_lang_label">Input Language</label>
+              <div class="select-wrapper">
+                <select id="languageSelect" class="form-select">
+                  <option value="auto">Language: Auto Detect</option>
+                  <option value="en">English</option>
+                  <option value="hi">हिन्दी (Hindi)</option>
+                  <option value="te">తెలుగు (Telugu)</option>
+                  <option value="ta">தமிழ் (Tamil)</option>
+                  <option value="kn">ಕನ್ನಡ (Kannada)</option>
+                  <option value="ml">മലയാളം (Malayalam)</option>
+                  <option value="mr">मराठी (Marathi)</option>
+                  <option value="bn">বাংলা (Bengali)</option>
+                  <option value="gu">ગુજરાતી (Gujarati)</option>
+                  <option value="pa">ਪੰਜਾਬੀ (Punjabi)</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <!-- Query Input Area -->
+          <div class="form-group query-group">
+            <div class="query-header-row">
+              <label for="queryInput" class="form-label">
+                <span data-i18n="demo_query_label">Describe your requirement in natural language</span>
+                <span class="label-hint" data-i18n="demo_query_hint">Include power, application, or features if known</span>
+              </label>
+
+              <!-- Multi-Modal Input Options -->
+              <div class="input-modes-toolbar" role="toolbar" aria-label="Input options">
+                <button type="button" class="mode-tool-btn" id="voiceSearchBtn" title="Speak Requirement in English or Regional Language">
+                  <span class="btn-icon">🎙️</span>
+                  <span class="btn-label" data-i18n="btn_voice">Voice Search</span>
+                </button>
+                <button type="button" class="mode-tool-btn" id="uploadDocBtn" title="Upload Tender / Specification Document (PDF, DOCX, TXT)">
+                  <span class="btn-icon">📄</span>
+                  <span class="btn-label" data-i18n="btn_upload">Upload Doc</span>
+                </button>
+                <button type="button" class="mode-tool-btn" id="scanPageBtn" title="Scan Appliance Rating Plate or Page (OCR)">
+                  <span class="btn-icon">📷</span>
+                  <span class="btn-label" data-i18n="btn_scan">Scan Page</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Voice Listening Banner (Visible when active) -->
+            <div class="voice-listening-banner" id="voiceBanner" style="display: none;">
+              <div class="voice-wave-anim">
+                <span class="bar"></span><span class="bar"></span><span class="bar"></span><span class="bar"></span>
+              </div>
+              <div class="voice-status-info">
+                <div class="voice-status-title">
+                  <span class="status-dot"></span>
+                  <span id="voiceStatusText">Listening... Speak your product requirement</span>
+                </div>
+                <div class="voice-live-transcript" id="voiceLiveTranscript">"..."</div>
+              </div>
+              <button type="button" class="btn btn-secondary btn-sm voice-stop-btn" id="voiceStopBtn">
+                <span>⏹️ Stop</span>
+              </button>
+            </div>
+
+            <div class="textarea-wrapper" id="textareaDropZone">
+              <textarea 
+                id="queryInput" 
+                class="form-textarea" 
+                rows="3" 
+                placeholder="e.g. I need a 2000W electric cooker for domestic use with automatic temperature control..."
+                required
+              ></textarea>
+              <div class="textarea-corner-tools">
+                <button type="button" class="corner-tool-btn corner-mic-btn" id="cornerMicBtn" title="Click to speak">🎙️</button>
+                <button type="button" class="corner-tool-btn corner-upload-btn" id="cornerUploadBtn" title="Upload PDF/Doc">📄</button>
+                <button type="button" class="clear-btn" id="clearBtn" title="Clear input" aria-label="Clear input">&times;</button>
+              </div>
+            </div>
+
+            <div class="input-helper-row">
+              <span class="input-drop-hint">💡 Tip: You can <strong>speak 🎙️</strong>, <strong>upload a tender/PDF 📄</strong>, <strong>scan a spec plate 📷</strong>, or drag & drop files!</span>
+            </div>
+          </div>
+
+          <!-- Quick Sample Prompt Chips -->
+          <div class="prompt-chips-wrapper">
+            <span class="chips-label" data-i18n="demo_chips_label">Try Sample Queries:</span>
+            <div class="prompt-chips">
+              <button type="button" class="chip" data-product="electric_cooker" data-lang="en">
+                🇬🇧 2000W Electric Cooker
+              </button>
+              <button type="button" class="chip" data-product="electric_cooker" data-lang="hi">
+                🇮🇳 घरेलू 2000W कुकर (Hindi)
+              </button>
+              <button type="button" class="chip" data-product="electric_cooker" data-lang="te">
+                🇮🇳 గృహ కుక్కర్ 2000W (Telugu)
+              </button>
+              <button type="button" class="chip" data-product="electric_fan" data-lang="en">
+                💨 1200mm BLDC Ceiling Fan
+              </button>
+              <button type="button" class="chip" data-product="electrical_cables" data-lang="en">
+                🔌 2.5 sq mm FRLS Copper Cable
+              </button>
+              <button type="button" class="chip chip-bulb-choice" id="bulbChoiceChip" data-product="bulb" data-lang="en">
+                💡 Bulb: Electric or LED?
+              </button>
+              <button type="button" class="chip" data-product="electric_bulb" data-lang="en">
+                ⚡ Electric Bulb (IS 418:2004)
+              </button>
+              <button type="button" class="chip" data-product="led_lamp" data-lang="en">
+                💡 9W B22 LED Lamp (IS 16102:2017)
+              </button>
+            </div>
+          </div>
+
+          <!-- Submit Action -->
+          <div class="form-submit-row">
+            <div class="legal-mini-notice">
+              <span class="notice-icon">ℹ️</span>
+              <span data-i18n="demo_legal_notice">BISENSE identifies potentially relevant standards. Verify against latest authoritative BIS publications.</span>
+            </div>
+            <button type="submit" class="btn btn-primary btn-xl glow-btn" id="findBtn">
+              <span class="btn-spinner" id="searchSpinner" style="display: none;"></span>
+              <span class="btn-icon" id="searchIcon">⚡</span>
+              <span id="btnText" data-i18n="demo_find_btn">Find Standards</span>
+            </button>
+          </div>
+        </form>
+
+        <!-- Bulb Type Disambiguation Prompt -->
+        <div class="did-you-mean-card bulb-prompt-card" id="bulbDisambiguationCard" style="display: none;">
+          <div class="dym-header">
+            <span class="dym-icon">💡</span>
+            <div class="dym-title-group">
+              <span class="dym-label">Which type of <strong>Bulb</strong> are you looking for?</span>
+              <span class="dym-subtitle">Indian Standards regulate traditional incandescent electric bulbs and self-ballasted LED lamps separately.</span>
+            </div>
+          </div>
+          <div class="dym-actions">
+            <button type="button" class="dym-select-btn" id="disambigElectricBtn">
+              <span>⚡</span> <span>Electric Bulb (Tungsten Filament &bull; IS 418:2004)</span>
+            </button>
+            <button type="button" class="dym-select-btn" id="disambigLedBtn">
+              <span>💡</span> <span>LED Bulb (Self-Ballasted LED &bull; IS 16102:2017)</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Smart Product Correction / Did You Mean Card -->
+        <div class="did-you-mean-card" id="didYouMeanCard" style="display: none;">
+          <div class="dym-header">
+            <span class="dym-icon">💡</span>
+            <div class="dym-title-group">
+              <span class="dym-label" id="dymQuestion">Did you mean &ldquo;<strong>Refrigerator</strong>&rdquo;?</span>
+              <span class="dym-subtitle">We identified a possible typo in your product requirement. Select a correction below or continue editing.</span>
+            </div>
+          </div>
+          <div class="dym-actions" id="dymActions">
+            <!-- Dynamically populated buttons: [ ✓ Select ... ] and [ ✏️ Edit Query ] -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Search Processing Animation (Section 15) -->
+      <div class="search-progress-container glass-card" id="searchProgress" style="display: none;">
+        <div class="progress-header">
+          <div class="progress-title-row">
+            <div class="spinner-orbit"></div>
+            <h3 class="progress-title" data-i18n="prog_title">AI Standards Discovery Engine Active</h3>
+          </div>
+          <span class="progress-pct" id="progressPct">0%</span>
+        </div>
+        <div class="progress-bar-track">
+          <div class="progress-bar-fill" id="progressBarFill"></div>
+        </div>
+        <div class="stages-list">
+          <div class="stage-item" id="stage-1"><span class="stage-indicator"></span><span class="stage-name" data-i18n="stage_1">Detecting language...</span></div>
+          <div class="stage-item" id="stage-2"><span class="stage-indicator"></span><span class="stage-name" data-i18n="stage_2">Understanding requirement...</span></div>
+          <div class="stage-item" id="stage-3"><span class="stage-indicator"></span><span class="stage-name" data-i18n="stage_3">Extracting product characteristics...</span></div>
+          <div class="stage-item" id="stage-4"><span class="stage-indicator"></span><span class="stage-name" data-i18n="stage_4">Generating semantic representation...</span></div>
+          <div class="stage-item" id="stage-5"><span class="stage-indicator"></span><span class="stage-name" data-i18n="stage_5">Searching standards knowledge base...</span></div>
+          <div class="stage-item" id="stage-6"><span class="stage-indicator"></span><span class="stage-name" data-i18n="stage_6">Ranking relevant standards...</span></div>
+          <div class="stage-item" id="stage-7"><span class="stage-indicator"></span><span class="stage-name" data-i18n="stage_7">Preparing explanation...</span></div>
+        </div>
+      </div>
+
+      <!-- Results View Wrapper -->
+      <div class="results-container" id="resultsContainer" style="display: none;">
+        
+        <!-- NLP Requirement Understanding Card (Section 16) -->
+        <div class="understanding-card glass-card" id="understandingCard">
+          <div class="understanding-header">
+            <div class="u-title-group">
+              <span class="u-icon">🧠</span>
+              <h3 class="u-title" data-i18n="u_title">Requirement Understanding</h3>
+            </div>
+            <div class="u-meta">
+              <span class="badge badge-blue" id="uLangBadge">Language: English</span>
+            </div>
+          </div>
+
+          <div class="understanding-grid">
+            <div class="u-item">
+              <span class="u-label" data-i18n="u_prod_lbl">Product Identified</span>
+              <span class="u-value" id="uProduct">Electric Cooker</span>
+            </div>
+            <div class="u-item">
+              <span class="u-label" data-i18n="u_app_lbl">Application</span>
+              <span class="u-value" id="uApp">Domestic</span>
+            </div>
+            <div class="u-item">
+              <span class="u-label" data-i18n="u_power_lbl">Power / Rating</span>
+              <span class="u-value" id="uPower">2000W</span>
+            </div>
+            <div class="u-item">
+              <span class="u-label" data-i18n="u_feat_lbl">Extracted Features</span>
+              <div class="u-features" id="uFeatures">
+                <!-- Badges -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3D Semantic Search Visualization (Section 21) -->
+        <div class="relevance-3d-card glass-card">
+          <div class="r3d-header">
+            <div>
+              <span class="section-tag cyan">3D VECTOR SPACE</span>
+              <h3 class="r3d-title" data-i18n="r3d_title">Semantic Search Relevance Graph</h3>
+            </div>
+            <div class="r3d-legend">
+              <span class="legend-item"><span class="dot query"></span> <span data-i18n="r3d_legend_query">User Query</span></span>
+              <span class="legend-item"><span class="dot high"></span> <span data-i18n="r3d_legend_high">High Match (≥82%)</span></span>
+              <span class="legend-item"><span class="dot med"></span> <span data-i18n="r3d_legend_med">Medium Match</span></span>
+            </div>
+          </div>
+          <div class="r3d-canvas-wrap">
+            <canvas id="relevanceCanvas"></canvas>
+            <div class="r3d-tooltip" id="r3dTooltip" style="display: none;"></div>
+          </div>
+          <div class="r3d-footer">
+            <span>💡 <em data-i18n="r3d_hint">Hover over 3D nodes to view relevance scores; click any node to jump to its full standard clauses below.</em></span>
+          </div>
+        </div>
+
+        <!-- Results List Header -->
+        <div class="results-list-header">
+          <div class="results-count-group">
+            <h3 class="results-heading" data-i18n="results_heading">Potentially Relevant Indian Standards</h3>
+            <span class="results-badge" id="resultsCount">0 Standards Found</span>
+          </div>
+          <div class="results-disclaimer-pill">
+            <span class="pill-icon">⚠️</span>
+            <span data-i18n="results_demo_badge">DEMO DATA — Verify against the authoritative BIS publication.</span>
+          </div>
+        </div>
+
+        <!-- Dynamic Results Cards -->
+        <div class="standards-list" id="standardsList">
+          <!-- Standards cards rendered here -->
+        </div>
+
+      </div>
+
+      <!-- No-Result Experience (Section 30) -->
+      <div class="no-result-card glass-card" id="noResultCard" style="display: none;">
+        <div class="no-result-icon">🔍</div>
+        <h3 class="no-result-title" data-i18n="no_res_title">No Potentially Relevant Standard Was Found</h3>
+        <p class="no-result-msg" data-i18n="no_res_msg">
+          We couldn't match a relevant Indian Standard within the <strong>Electrical & Electronic Products</strong>
+          domain for your current input.
+        </p>
+        <div class="no-result-tips">
+          <h4>Try refining your query with:</h4>
+          <ul>
+            <li><strong>Product Type:</strong> e.g., Electric Cooker, Ceiling Fan, LED Lamp, Cable</li>
+            <li><strong>Intended Use:</strong> Domestic, Commercial, or Industrial</li>
+            <li><strong>Technical Specifications:</strong> 2000W, 230V AC, 1200mm sweep, 2.5 sq mm</li>
+            <li><strong>Safety Requirements:</strong> Thermal cut-off, earthing, child safety shutter</li>
+            <li><strong>Performance Requirements:</strong> 5-star energy efficient, luminous efficacy</li>
+          </ul>
+        </div>
+        <button type="button" class="btn btn-secondary" id="resetSearchBtn" data-i18n="no_res_try_btn">Try a Suggested Query</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================
+       ARCHITECTURE SECTION (3D STACK)
+       ======================================================== -->
+  <section class="section arch-section" id="architecture">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag" data-i18n="arch_tag">SYSTEM BLUEPRINT</span>
+        <h2 class="section-title" data-i18n="arch_title">End-to-End System Architecture</h2>
+        <p class="section-subtitle" data-i18n="arch_subtitle">
+          Interactive 3D representation of the BISENSE data and AI pipeline.
+          From user requirements to ranked standard clauses.
+        </p>
+      </div>
+
+      <div class="grid grid-2 arch-grid">
+        <div class="arch-3d-card glass-card">
+          <div class="arch-canvas-wrap">
+            <canvas id="archCanvas"></canvas>
+          </div>
+          <div class="arch-hint">
+            <span data-i18n="arch_hint">Interactive 3D Stack: Click layers to inspect technical components</span>
+          </div>
+        </div>
+
+        <div class="arch-details-card glass-card" id="archDetailsCard">
+          <div class="arch-flow-item active" data-layer="user">
+            <div class="flow-num">01</div>
+            <div class="flow-body">
+              <h4 class="flow-title">User Interface Layer</h4>
+              <p class="flow-desc">Pure HTML5, CSS3 Glassmorphism, and Vanilla JavaScript with Three.js rendering. Zero bulky UI framework dependencies.</p>
+            </div>
+          </div>
+
+          <div class="arch-flow-item" data-layer="flask">
+            <div class="flow-num">02</div>
+            <div class="flow-body">
+              <h4 class="flow-title">Flask Application & REST API</h4>
+              <p class="flow-desc">Python Flask backend handling CORS, request validation, endpoint routing, and JSON serialization.</p>
+            </div>
+          </div>
+
+          <div class="arch-flow-item" data-layer="nlp">
+            <div class="flow-num">03</div>
+            <div class="flow-body">
+              <h4 class="flow-title">Multilingual NLP Service</h4>
+              <p class="flow-desc">Unicode script analysis detecting 10 Indian regional languages + English, with rule-based entity extraction for electrical ratings.</p>
+            </div>
+          </div>
+
+          <div class="arch-flow-item" data-layer="embedding">
+            <div class="flow-num">04</div>
+            <div class="flow-body">
+              <h4 class="flow-title">Multilingual Semantic Embeddings</h4>
+              <p class="flow-desc">Dense 384-dimensional cross-lingual concept projection mapping regional inputs into shared vector representations.</p>
+            </div>
+          </div>
+
+          <div class="arch-flow-item" data-layer="faiss">
+            <div class="flow-num">05</div>
+            <div class="flow-body">
+              <h4 class="flow-title">FAISS Vector Search Engine</h4>
+              <p class="flow-desc">High-speed Inner Product (Cosine Similarity) index querying multi-chunk standard sections (Scope, Safety, Testing).</p>
+            </div>
+          </div>
+
+          <div class="arch-flow-item" data-layer="kb">
+            <div class="flow-num">06</div>
+            <div class="flow-body">
+              <h4 class="flow-title">Standards Knowledge Base</h4>
+              <p class="flow-desc">Structured JSON standards database ready for PostgreSQL + pgvector expansion with multi-section technical clauses.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       TARGET USERS SECTION
+       ======================================================== -->
+  <section class="section users-section" id="users">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag" data-i18n="users_tag">STAKEHOLDER IMPACT</span>
+        <h2 class="section-title" data-i18n="users_title">Built for Modern Procurement</h2>
+        <p class="section-subtitle" data-i18n="users_subtitle">
+          BISENSE accelerates standards discovery across the public and private sector.
+        </p>
+      </div>
+
+      <div class="grid grid-4 users-grid">
+        <div class="card glass-card user-card">
+          <div class="user-icon cyan">👔</div>
+          <h3 class="user-role">Procurement Officers</h3>
+          <p class="user-desc">
+            Quickly identify applicable IS numbers and mandatory safety testing criteria while drafting public procurement tenders.
+          </p>
+        </div>
+
+        <div class="card glass-card user-card">
+          <div class="user-icon blue">🏛️</div>
+          <h3 class="user-role">Government Departments</h3>
+          <p class="user-desc">
+            Support standards-aware public policy, GeM (Government e-Marketplace) integrations, and quality compliance audits.
+          </p>
+        </div>
+
+        <div class="card glass-card user-card">
+          <div class="user-icon purple">🏭</div>
+          <h3 class="user-role">Manufacturing Enterprises</h3>
+          <p class="user-desc">
+            Assist design teams with standards discovery during initial prototyping, component selection, and ISI certification.
+          </p>
+        </div>
+
+        <div class="card glass-card user-card">
+          <div class="user-icon green">⚖️</div>
+          <h3 class="user-role">Compliance Teams</h3>
+          <p class="user-desc">
+            Locate and cross-reference testing methodologies, high-voltage tolerances, and mandatory product marking guidelines.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       TECHNOLOGY STACK SECTION
+       ======================================================== -->
+  <section class="section tech-section" id="tech">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag" data-i18n="tech_tag">BUILT WITH MODERN STANDARDS</span>
+        <h2 class="section-title" data-i18n="tech_title">Core Technology Stack</h2>
+        <p class="section-subtitle">
+          Clean, production-grade components engineered without bloat.
+        </p>
+      </div>
+
+      <div class="tech-grid">
+        <div class="tech-pill"><span class="tech-icon">🌐</span> HTML5</div>
+        <div class="tech-pill"><span class="tech-icon">🎨</span> CSS3 Glassmorphism</div>
+        <div class="tech-pill"><span class="tech-icon">⚡</span> Vanilla JS ES6</div>
+        <div class="tech-pill"><span class="tech-icon">🧊</span> Three.js 3D</div>
+        <div class="tech-pill"><span class="tech-icon">🐍</span> Python 3</div>
+        <div class="tech-pill"><span class="tech-icon">🌶️</span> Flask REST API</div>
+        <div class="tech-pill"><span class="tech-icon">🔤</span> Multilingual NLP</div>
+        <div class="tech-pill"><span class="tech-icon">🧠</span> Semantic Embeddings</div>
+        <div class="tech-pill"><span class="tech-icon">🔍</span> FAISS Vector Index</div>
+        <div class="tech-pill"><span class="tech-icon">📦</span> Multi-Chunk KB</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       FINAL CALL TO ACTION
+       ======================================================== -->
+  <section class="section cta-section" id="cta">
+    <div class="cta-canvas-wrap">
+      <canvas id="ctaCanvas"></canvas>
+    </div>
+    <div class="container text-center cta-content">
+      <h2 class="cta-title" data-i18n="cta_title">Make Standards Discovery Smarter.</h2>
+      <p class="cta-subtitle" data-i18n="cta_subtitle">
+        From natural-language requirements to potentially relevant Indian Standards —
+        powered by multilingual AI semantic search.
+      </p>
+      <a href="#demo" class="btn btn-primary btn-xl glow-btn">
+        <span class="btn-icon">⚡</span>
+        <span data-i18n="cta_btn">Launch BISENSE</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       FOOTER
+       ======================================================== -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="brand-logo-icon">
+            <span class="logo-core"></span>
+            <span class="logo-orbit"></span>
+          </div>
+          <span class="footer-brand-name">BISENSE</span>
+        </div>
+        <p class="footer-tagline" data-i18n="footer_tagline">
+          Understand Requirements. Discover the Right Indian Standards.
+        </p>
+        <div class="footer-domain-badge" data-i18n="footer_domain">
+          Domain: Electrical & Electronic Products
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <a href="#hero" data-i18n="nav_home">Home</a>
+        <a href="#problem" data-i18n="nav_problem">Problem</a>
+        <a href="#solution" data-i18n="nav_solution">Solution</a>
+        <a href="#products" data-i18n="nav_products">Products</a>
+        <a href="#demo" data-i18n="nav_demo">Demo</a>
+        <a href="#architecture" data-i18n="nav_arch">Architecture</a>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-copy" data-i18n="footer_sih">
+          &copy; 2026 BISENSE AI. Built for Smart India Hackathon.
+        </div>
+        <div class="footer-disclaimer">
+          <strong>Notice:</strong> BISENSE assists with standards discovery and information retrieval.
+          Recommendations should be verified against the latest authoritative BIS publication and applicable procurement/compliance requirements.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================
+       MODALS:
+       1. FULL STANDARD DETAILS MODAL
+       2. RELATED STANDARDS 3D GRAPH MODAL
+       ======================================================== -->
+  
+  <!-- Modal: Bulb Type Selection (Electric vs LED) -->
+  <div class="modal-overlay" id="bulbTypeModal" style="display: none;">
+    <div class="modal-card glass-card modal-md">
+      <div class="modal-header">
+        <div>
+          <span class="badge badge-cyan">PRODUCT SELECTION</span>
+          <h3 class="modal-title">Which Type of Bulb Are You Looking For?</h3>
+          <p class="modal-subtitle" style="font-size: 0.88rem; color: var(--text-muted); margin-top: 0.25rem;">
+            Indian Standards define separate specifications and safety criteria for conventional filament bulbs versus energy-efficient LED lamps.
+          </p>
+        </div>
+        <button class="modal-close" id="bulbModalCloseBtn" aria-label="Close modal">&times;</button>
+      </div>
+
+      <div class="modal-body">
+        <div class="bulb-choice-grid">
+          
+          <!-- Choice 1: Electric Bulb -->
+          <div class="bulb-choice-card" id="chooseElectricBulb" tabindex="0" role="button" aria-label="Select Electric Bulb">
+            <div class="bulb-choice-header">
+              <div class="bulb-icon-wrap amber">⚡</div>
+              <div class="bulb-choice-title-group">
+                <span class="bulb-choice-category">INCANDESCENT / FILAMENT</span>
+                <h4 class="bulb-choice-title">Electric Bulb</h4>
+                <span class="badge badge-amber">IS 418 : 2004</span>
+              </div>
+            </div>
+            <p class="bulb-choice-desc">
+              Conventional tungsten filament electric lamps for domestic and similar general lighting purposes (15W – 100W, 230V AC, B22/E27 caps).
+            </p>
+            <div class="bulb-metric-badges">
+              <span class="mini-metric"><span class="m-dot safe"></span> Safety: 100%</span>
+              <span class="mini-metric"><span class="m-dot perf"></span> Quality: 94%</span>
+              <span class="mini-metric"><span class="m-dot test"></span> Testing: 97%</span>
+            </div>
+            <button type="button" class="btn btn-secondary btn-sm bulb-select-btn">
+              ⚡ Select Electric Bulb (IS 418:2004)
+            </button>
+          </div>
+
+          <!-- Choice 2: LED Bulb -->
+          <div class="bulb-choice-card" id="chooseLedBulb" tabindex="0" role="button" aria-label="Select LED Bulb">
+            <div class="bulb-choice-header">
+              <div class="bulb-icon-wrap cyan">💡</div>
+              <div class="bulb-choice-title-group">
+                <span class="bulb-choice-category">SOLID-STATE LIGHTING</span>
+                <h4 class="bulb-choice-title">LED Bulb / Lamp</h4>
+                <span class="badge badge-cyan">IS 16102 : 2017</span>
+              </div>
+            </div>
+            <p class="bulb-choice-desc">
+              Self-ballasted LED lamps with integrated driver gear, high luminous efficacy (≥100 lm/W), and mandatory photobiological surge protection.
+            </p>
+            <div class="bulb-metric-badges">
+              <span class="mini-metric"><span class="m-dot safe"></span> Safety: 100%</span>
+              <span class="mini-metric"><span class="m-dot perf"></span> Efficacy: 98%</span>
+              <span class="mini-metric"><span class="m-dot test"></span> Testing: 99%</span>
+            </div>
+            <button type="button" class="btn btn-primary btn-sm bulb-select-btn glow-btn">
+              💡 Select LED Bulb (IS 16102:2017)
+            </button>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <span class="legend-note">Click either option to automatically load requirement specifications and view standards</span>
+        <button type="button" class="btn btn-secondary btn-sm" id="bulbModalCloseAction">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal: Standard Details -->
+  <div class="modal-overlay" id="detailModal" style="display: none;">
+    <div class="modal-card glass-card">
+      <div class="modal-header">
+        <div>
+          <span class="badge badge-cyan" id="modalIsNumber">IS NUMBER</span>
+          <h3 class="modal-title" id="modalTitle">Standard Title</h3>
+        </div>
+        <button class="modal-close" id="modalCloseBtn" aria-label="Close modal">&times;</button>
+      </div>
+
+      <div class="modal-body" id="modalBody">
+        <!-- Injected via JS -->
+      </div>
+
+      <div class="modal-footer">
+        <div class="demo-tag">DEMO DATA — Verify against authoritative BIS publication</div>
+        <div style="display: flex; gap: 0.5rem; align-items: center;">
+          <button type="button" class="btn btn-verify btn-sm" id="modalVerifyBtn">🔗 Verify on BIS</button>
+          <button type="button" class="btn btn-secondary btn-sm" id="modalCloseAction">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal: Related Standards 3D Graph -->
+  <div class="modal-overlay" id="relatedModal" style="display: none;">
+    <div class="modal-card glass-card modal-lg">
+      <div class="modal-header">
+        <div>
+          <span class="badge badge-purple" id="relatedModalTag">RELATED STANDARDS NETWORK</span>
+          <h3 class="modal-title" id="relatedModalTitle">Standard Relationship Graph</h3>
+        </div>
+        <button class="modal-close" id="relatedModalCloseBtn" aria-label="Close modal">&times;</button>
+      </div>
+
+      <div class="modal-body-graph">
+        <div class="graph-canvas-wrap">
+          <canvas id="relatedCanvas"></canvas>
+          <div class="graph-info-overlay" id="graphInfoOverlay">
+            Click any related standard node to view its specifications
+          </div>
+        </div>
+        <div class="related-list-panel" id="relatedListPanel">
+          <!-- Injected via JS -->
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <span class="legend-note">Product • Safety • Testing • Installation Standards</span>
+        <button type="button" class="btn btn-secondary btn-sm" id="relatedModalCloseAction">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================
+       MODAL: UPLOAD TENDER SPEC & SCAN PAGE (OCR)
+       ======================================================== -->
+  <div class="modal-overlay" id="uploadScanModal" style="display: none;">
+    <div class="modal-card glass-card modal-lg upload-modal-card">
+      <div class="modal-header">
+        <div>
+          <span class="badge badge-cyan" id="uploadModalBadge">MULTI-MODAL SMART INPUT</span>
+          <h3 class="modal-title" id="uploadModalTitle">Upload Tender Spec or Scan Page</h3>
+        </div>
+        <button class="modal-close" id="uploadModalCloseBtn" aria-label="Close modal">&times;</button>
+      </div>
+
+      <div class="modal-body upload-modal-body">
+        <!-- Tab Selector: Document vs Image Scan -->
+        <div class="upload-mode-tabs">
+          <button type="button" class="up-tab-btn active" id="tabUploadDoc">
+            <span class="up-tab-icon">📄</span>
+            <span>Upload Tender Document (PDF / Word)</span>
+          </button>
+          <button type="button" class="up-tab-btn" id="tabScanPage">
+            <span class="up-tab-icon">📷</span>
+            <span>Scan Spec Plate or Page (OCR)</span>
+          </button>
+        </div>
+
+        <!-- Pane 1: Document Upload (PDF, Word, Text) -->
+        <div class="upload-pane active" id="paneUploadDoc">
+          <div class="dropzone-box" id="docDropZone">
+            <input type="file" id="docFileInput" accept=".pdf,.docx,.doc,.txt,.json,.csv,.md" style="display: none;">
+            <div class="dropzone-visual">
+              <span class="dropzone-emoji">📁</span>
+            </div>
+            <h4 class="dropzone-headline">Drag & drop your specification document here</h4>
+            <p class="dropzone-description">
+              Upload procurement tender notices, technical RFPs, or product datasheet files.
+              BISENSE automatically extracts power ratings, intended usage, and safety specifications.
+            </p>
+            <div class="dropzone-btn-group">
+              <button type="button" class="btn btn-primary btn-sm" id="docBrowseBtn">
+                <span>📂 Select PDF or Word File</span>
+              </button>
+            </div>
+            <div class="format-badges-row">
+              <span class="fmt-badge">.PDF</span>
+              <span class="fmt-badge">.DOCX</span>
+              <span class="fmt-badge">.TXT</span>
+              <span class="fmt-badge">Tender Specs</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pane 2: Image Scan & OCR (Camera / Photo) -->
+        <div class="upload-pane" id="paneScanPage" style="display: none;">
+          <div class="dropzone-box" id="imageDropZone">
+            <input type="file" id="imageFileInput" accept="image/*" capture="environment" style="display: none;">
+            <div class="dropzone-visual">
+              <span class="dropzone-emoji">📷</span>
+            </div>
+            <h4 class="dropzone-headline">Take a photo or upload an appliance rating plate</h4>
+            <p class="dropzone-description">
+              Scan product nameplates, rating labels, or printed tender clauses.
+              Built-in optical character recognition (OCR) extracts model, voltage, wattage, and safety marks.
+            </p>
+            <div class="dropzone-btn-group">
+              <button type="button" class="btn btn-primary btn-sm" id="imageCameraBtn">
+                <span>📸 Take Photo / Scan</span>
+              </button>
+              <button type="button" class="btn btn-secondary btn-sm" id="imageBrowseBtn">
+                <span>🖼️ Choose Image</span>
+              </button>
+              <button type="button" class="btn btn-outline btn-sm" id="samplePlateBtn">
+                <span>⚡ Load Sample Spec Plate</span>
+              </button>
+            </div>
+            <div class="format-badges-row">
+              <span class="fmt-badge">PNG / JPG</span>
+              <span class="fmt-badge">Mobile Camera</span>
+              <span class="fmt-badge">Rating Plates</span>
+              <span class="fmt-badge">High Precision OCR</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Upload & OCR Processing Bar -->
+        <div class="up-progress-wrap" id="uploadProgress" style="display: none;">
+          <div class="progress-bar-track">
+            <div class="progress-bar-fill" id="uploadProgressFill" style="width: 0%;"></div>
+          </div>
+          <div class="progress-status-row">
+            <span class="status-msg" id="uploadProgressText">Processing file...</span>
+            <span class="status-pct" id="uploadProgressPct">0%</span>
+          </div>
+        </div>
+
+        <!-- Extracted Results Preview Card -->
+        <div class="extraction-card" id="extractionPreview" style="display: none;">
+          <div class="extr-header">
+            <div class="extr-title-row">
+              <span class="extr-badge">Extracted Specifications</span>
+              <span class="extr-filename" id="previewFileName">document.pdf</span>
+            </div>
+          </div>
+
+          <div class="extr-specs-tags" id="previewSpecsChips">
+            <!-- Injected via JS: Product, Wattage, Voltage, Application -->
+          </div>
+
+          <div class="extr-query-box">
+            <label class="extr-label">Generated Natural Language Requirement:</label>
+            <textarea class="form-textarea extr-textarea" id="previewQueryText" rows="2"></textarea>
+          </div>
+
+          <div class="extr-raw-toggle-wrap">
+            <button type="button" class="raw-toggle-link" id="rawToggleBtn">
+              <span>Show Raw Document Text ▾</span>
+            </button>
+            <pre class="raw-text-block" id="rawTextContent" style="display: none;"></pre>
+          </div>
+
+          <div class="extr-actions">
+            <button type="button" class="btn btn-secondary btn-sm" id="applyToQueryBtn">
+              <span>✍️ Insert into Search Box</span>
+            </button>
+            <button type="button" class="btn btn-primary btn-sm" id="applyAndSearchBtn">
+              <span>🚀 Search Indian Standards</span>
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="modal-footer">
+        <span class="legend-note">Your files are processed locally and securely.</span>
+        <button type="button" class="btn btn-secondary btn-sm" id="uploadModalCancelBtn">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Application Scripts -->
+  <script src="/static/js/api.js"></script>
+  <script src="/static/js/three-scene.js"></script>
+  <script src="/static/js/translations.js"></script>
+  <!-- Client-Side OCR Engine (Tesseract.js) -->
+  <script src="https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/tesseract.min.js"></script>
+  <script src="/static/js/search.js"></script>
+  <script src="/static/js/main.js"></script>
+</body>
+</html>
